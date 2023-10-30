@@ -1,0 +1,1943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<!-- Universal keyboard -->
+
+<keyboard group="0" id="16383" name="Universal" maxout="2">
+  <layouts>
+    <layout first="0" last="9" modifiers="commonModifiers" mapSet="ANSI" />
+  </layouts>
+  <modifierMap id="commonModifiers" defaultIndex="0">
+    <keyMapSelect mapIndex="0">
+      <modifier keys="command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="1">
+      <modifier keys="caps command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="2">
+      <modifier keys="shift caps? command?" />
+      <modifier keys="rightShift caps? command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="3">
+      <modifier keys="anyOption command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="4">
+      <modifier keys="anyOption caps command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="5">
+      <modifier keys="anyOption shift caps? command?" />
+      <modifier keys="anyOption rightShift caps? command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="6">
+      <modifier keys="shift rightShift command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="7">
+      <modifier keys="shift rightShift caps command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="8">
+      <modifier keys="anyOption shift rightShift caps? command?" />
+    </keyMapSelect>
+    <keyMapSelect mapIndex="9">
+      <modifier keys="anyControl command? anyOption? anyShift? caps?" />
+    </keyMapSelect>
+  </modifierMap>
+  <keyMapSet id="ANSI">
+    <keyMap index="0">	<!-- No modifiers -->
+      <!-- 1st row -->
+      <key code="50" output="`" />
+      <key code="18" output="1" />
+      <key code="19" output="2" />
+      <key code="20" output="3" />
+      <key code="21" output="4" />
+      <key code="23" output="5" />
+      <key code="22" output="6" />
+      <key code="26" output="7" />
+      <key code="28" output="8" />
+      <key code="25" output="9" />
+      <key code="29" action="zero" />
+      <key code="27" output="-" />
+      <key code="24" action="equals" />
+      
+      <!-- 2nd row -->
+      <key code="12" action="q" />
+      <key code="13" action="w" />
+      <key code="14" action="e" />
+      <key code="15" action="r" />
+      <key code="17" action="t" />
+      <key code="16" action="y" />
+      <key code="32" action="u" />
+      <key code="34" action="i" />
+      <key code="31" action="o" />
+      <key code="35" action="p" />
+      <key code="33" output="[" />
+      <key code="30" output="]" />
+      <key code="42" output="\" />
+      
+      <!-- 3rd row -->
+      <key code="0" action="a" />
+      <key code="1" action="s" />
+      <key code="2" action="d" />
+      <key code="3" action="f" />
+      <key code="5" action="g" />
+      <key code="4" action="h" />
+      <key code="38" action="j" />
+      <key code="40" action="k" />
+      <key code="37" action="l" />
+      <key code="41" output=";"/>
+      <key code="39" output="'" />
+      
+      <!-- 4th row -->
+      <key code="6" action="z" />
+      <key code="7" action="x" />
+      <key code="8" action="c" />
+      <key code="9" action="v" />
+      <key code="11" action="b" />
+      <key code="45" action="n" />
+      <key code="46" action="m" />
+      <key code="43" output="," />
+      <key code="47" output="." />
+      <key code="44" output="/" />
+      
+      <!-- Space bar -->
+      <key code="49" output=" " />
+      
+      <!-- Keypad -->
+      <key code="89" output="7" />
+      <key code="91" output="8" />
+      <key code="92" output="9" />
+      <key code="75" output="/" />
+      <key code="81" action="equals" />
+      <key code="86" output="4" />
+      <key code="87" output="5" />
+      <key code="88" output="6" />
+      <key code="67" output="*" />
+      <key code="83" output="1" />
+      <key code="84" output="2" />
+      <key code="85" output="3" />
+      <key code="78" output="-" />
+      <key code="82" action="zero" />
+      <key code="65" output="." />
+      <key code="69" action="plus" />
+      
+      <!-- NON-PRINTING KEYS, don't edit -->
+      <key code="10" output="§" />
+      <key code="36" output="&#x000d;" />
+      <key code="48" output="&#x0009;" />
+      <key code="51" output="&#x0008;" />
+      <key code="52" output="&#x0003;" />
+      <key code="53" output="&#x001b;" />
+      <key code="66" output="&#x001d;" />
+      <key code="70" output="&#x001c;" />
+      <key code="71" output="&#x001b;" />
+      <key code="72" output="&#x001f;" />
+      <key code="76" output="&#x0003;" />
+      <key code="77" output="&#x001e;" />
+      <key code="96" output="&#x0010;" />
+      <key code="97" output="&#x0010;" />
+      <key code="98" output="&#x0010;" />
+      <key code="99" output="&#x0010;" />
+      <key code="100" output="&#x0010;" />
+      <key code="101" output="&#x0010;" />
+      <key code="102" output="&#x0010;" />
+      <key code="103" output="&#x0010;" />
+      <key code="104" output="&#x0010;" />
+      <key code="105" output="&#x0010;" />
+      <key code="106" output="&#x0010;" />
+      <key code="107" output="&#x0010;" />
+      <key code="108" output="&#x0010;" />
+      <key code="109" output="&#x0010;" />
+      <key code="110" output="&#x0010;" />
+      <key code="111" output="&#x0010;" />
+      <key code="112" output="&#x0010;" />
+      <key code="113" output="&#x0010;" />
+      <key code="114" output="&#x0005;" />
+      <key code="115" output="&#x0001;" />
+      <key code="116" output="&#x000b;" />
+      <key code="117" output="&#x007f;" />
+      <key code="118" output="&#x0010;" />
+      <key code="119" output="&#x0004;" />
+      <key code="120" output="&#x0010;" />
+      <key code="121" output="&#x000c;" />
+      <key code="122" output="&#x0010;" />
+      <key code="123" output="&#x001c;" />
+      <key code="124" output="&#x001d;" />
+      <key code="125" output="&#x001f;" />
+      <key code="126" output="&#x001e;" />
+    </keyMap>
+    <keyMap index="1" baseMapSet="ANSI" baseIndex="0"> <!-- caps lock -->
+      <!-- 2nd row -->
+      <key code="12" output="Q" />
+      <key code="13" action="W" />
+      <key code="14" action="E" />
+      <key code="15" action="R" />
+      <key code="17" action="T" />
+      <key code="16" action="Y" />
+      <key code="34" action="I" />
+      <key code="31" action="O" />
+      <key code="32" action="U" />
+      <key code="35" action="P" />
+      
+      <!-- 3rd row -->
+      <key code="0" action="A" />
+      <key code="1" action="S" />
+      <key code="2" action="D" />
+      <key code="3" action="F" />
+      <key code="5" action="G" />
+      <key code="4" action="H" />
+      <key code="38" action="J" />
+      <key code="40" action="K" />
+      <key code="37" action="L" />
+      
+      <!-- 4th row -->
+      <key code="6" action="Z" />
+      <key code="7" action="X" />
+      <key code="8" action="C" />
+      <key code="9" action="V" />
+      <key code="11" action="B" />
+      <key code="45" action="N" />
+      <key code="46" action="M" />
+    </keyMap>
+    <keyMap index="2" baseMapSet="ANSI" baseIndex="1"> <!-- shift -->
+      <!-- 1st row -->
+      <key code="50" action="turnedhyphen" />
+      <key code="18" output="!" />
+      <key code="19" output="@" />
+      <key code="20" output="#" />
+      <key code="21" output="$" />
+      <key code="23" output="%" />
+      <key code="22" action="caret" />
+      <key code="26" output="&#x0026;" /> <!-- ampersand -->
+      <key code="28" output="*" />
+      <key code="25" output="(" />
+      <key code="29" output=")" />
+      <key code="27" output="_" />
+      <key code="24" action="plus" />
+      
+      <!-- 2nd row -->
+      <key code="33" output="{" />
+      <key code="30" output="}" />
+      <key code="42" output="|" />
+      
+      <!-- 3rd row -->
+      <key code="41" output=":"/>
+      <key code="39" output="&#x0022;" /> <!-- quotation mark -->
+      
+      <!-- 4th row -->
+      <key code="43" action="lessthan" />
+      <key code="47" action="greaterthan" />
+      <key code="44" output="?" />
+      
+      <!-- NON-PRINTING KEYS, don't edit -->
+      <key code="10" output="±" />
+    </keyMap>
+    <keyMap index="3"> <!-- option -->
+      <!-- 1st row -->
+      <key code="50" action="grave" />
+      <key code="18" output="&#x00aa;" /> <!-- feminine ordinal indicator (a) -->
+      <key code="19" output="&#x00ba;" /> <!-- masculine ordinal indicator (o) -->
+      <key code="20" output="&#x00ac;" /> <!-- not sign -->
+      <key code="21" output="&#x2122;" /> <!-- trade mark sign -->
+      <key code="23" output="&#x00b0;" /> <!-- degree sign -->
+      <key code="22" action="caron" />
+      <key code="26" output="&#x00a9;" /> <!-- copyright sign -->
+      <key code="28" output="&#x00b7;" /> <!-- middle dot -->
+      <key code="25" output="&#x201a;" /> <!-- single low-9 quotation mark -->
+      <key code="29" action="minus" />
+      <key code="27" output="&#x2013;" /> <!-- en dash -->
+      <key code="24" output="&#x00f7;" /> <!-- division sign -->
+      
+      <!-- 2nd row -->
+      <key code="12" output="&#x2229;" /> <!-- intersection -->
+      <key code="13" action="superset" />
+      <key code="14" output="&#x0259;" /> <!-- schwa -->
+      <key code="15" output="&#x2120;" /> <!-- service mark -->
+      <key code="17" output="&#x00fe;" /> <!-- thorn -->
+      <key code="16" output="&#x021d;" /> <!-- yogh -->
+      <key code="32" action="ringabove" />
+      <key code="34" action="dotless_i" />
+      <key code="31" output="&#x0153;" /> <!-- oe -->
+      <key code="35" output="&#x00b6;" /> <!-- pilcrow sign -->
+      <key code="33" output="&#x27e6;" /> <!-- mathematical left white square bracket -->
+      <key code="30" output="&#x27e7;" /> <!-- mathematical right white square bracket -->
+      <key code="42" output="&#x2026;" /> <!-- ellipsis -->
+      
+      <!-- 3rd row -->
+      <key code="0" output="&#x00e6;" /> <!-- ae -->
+      <key code="1" action="long_s" />
+      <key code="2" output="&#x00f0;" /> <!-- eth -->
+      <key code="3" output="&#x0192;" /> <!-- Florin currency symbol -->
+      <key code="5" action="macron" />
+      <key code="4" action="bar" />
+      <key code="38" action="linebelow" />
+      <key code="40" output="&#x2020;" /> <!-- dagger -->
+      <key code="37" output="&#x00a3;" /> <!-- pound sign -->
+      <key code="41" output="&#x2018;" /> <!-- left single quotation mark -->
+      <key code="39" output="&#x2019;" /> <!-- right single quotation mark -->
+      
+      <!-- 4th row -->
+      <key code="6" output="&#x00df;" /> <!-- sharp s -->
+      <key code="7" output="&#x2235;" /> <!-- because -->
+      <key code="8" output="&#x261e;" /> <!-- fist -->
+      <key code="9" output="&#x2767;" /> <!-- hedera -->
+      <key code="11" output="&#x266d;" /> <!-- music flat sign -->
+      <key code="45" action="dotbelow" />
+      <key code="46" output="&#x03bc;" /> <!-- mu -->
+      <key code="43" output="&#x2039;" /> <!-- single left-pointing angle quotation mark -->
+      <key code="47" output="&#x203a;" /> <!-- single right-pointing angle quotation mark -->
+      <key code="44" action="stroke" />
+      
+      <!-- Space bar -->
+      <key code="49" output="&#x2009;" /> <!-- thin space -->
+      
+      <!-- Keypad -->
+      <key code="75" output="&#x00f7;" /> <!-- division sign -->
+      <key code="67" output="&#x00d7;" /> <!-- multiplication sign -->
+      <key code="78" output="&#x2212;" /> <!-- minus sign -->
+    </keyMap>
+    <keyMap index="4" baseMapSet="ANSI" baseIndex="3"> <!-- option caps -->
+      <!-- 2nd row -->
+      <key code="17" output="&#x00de;" /> <!-- THORN -->
+      <key code="16" output="&#x021c;" /> <!-- YOGH -->
+      <key code="31" output="&#x0152;" /> <!-- OE -->
+      
+      <!-- 3rd row -->
+      <key code="0" output="&#x00c6;" /> <!-- AE -->
+      <key code="2" output="&#x00d0;" /> <!-- ETH -->
+    </keyMap>
+    <keyMap index="5" baseMapSet="ANSI" baseIndex="4"> <!-- option shift -->
+      <!-- 1st row -->
+      <key code="50" action="tilde" />
+      <key code="18" output="&#x00a1;" /> <!-- inverted exclamation mark -->
+      <key code="19" output="&#x266e;" /> <!-- music natural sign -->
+      <key code="20" output="&#x266f;" /> <!-- music sharp sign -->
+      <key code="21" output="&#x20ac;" /> <!-- euro sign -->
+      <key code="23" output="&#x2030;" /> <!-- per mille sign -->
+      <key code="22" action="circumflex" />
+      <key code="26" output="&#x00ae;" /> <!-- registered sign -->
+      <key code="28" output="&#x2022;" /> <!-- bullet -->
+      <key code="25" output="&#x201e;" /> <!-- double low-9 quotation mark -->
+      <key code="29" output="&#x2010;" /> <!-- hyphen -->
+      <key code="27" output="&#x2014;" /> <!-- em dash -->
+      <key code="24" output="&#x00d7;" /> <!-- multiplication sign -->
+      
+      <!-- 2nd row -->
+      <key code="12" output="&#x222a;" /> <!-- union -->
+      <key code="13" action="subset" />
+      <key code="14" action="acute" />
+      <key code="15" output="&#x2117;" /> <!-- sound recording copyright -->
+      <key code="32" action="diaeresis" />
+      <key code="34" action="dotabove" />
+      <key code="35" action="doubleacute" />
+      <key code="33" output="&#x27e8;" /> <!-- mathematical left angle bracket -->
+      <key code="30" output="&#x27e9;" /> <!-- mathematical right angle bracket -->
+      <key code="42" action="parallel" />
+      
+      <!-- 3rd row -->
+      <key code="1" output="&#x00a7;" /> <!-- section sign -->
+      <key code="3" output="&#x0305;" /> <!-- combining overline -->
+      <key code="5" action="breve" />
+      <key code="4" action="hookabove" />
+      <key code="38" action="horn" />
+      <key code="40" output="&#x2021;" /> <!-- double dagger -->
+      <key code="37" output="&#x00a5;" /> <!-- yen sign -->
+      <key code="41" output="&#x201c;" /> <!-- left double quotation mark -->
+      <key code="39" output="&#x201d;" /> <!-- right double quotation mark -->
+
+      <!-- 4th row -->
+      <key code="6" output="&#x221a;" /> <!-- square root -->
+      <key code="7" output="&#x2234;" /> <!-- therefore -->
+      <key code="8" action="cedilla" />
+      <key code="9" action="or" />
+      <key code="11" action="ogonek" />
+      <key code="45" action="hook" />
+      <key code="46" action="a" />
+      <key code="43" output="&#x00ab;" /> <!-- left-pointing double angle quotation mark -->
+      <key code="47" output="&#x00bb;" /> <!-- right-pointing double angle quotation mark -->
+      <key code="44" output="&#x00bf;" /> <!-- inverted question mark -->
+    </keyMap>
+    <keyMap index="6" baseMapSet="ANSI" baseIndex="0"> <!-- both shifts -->
+      <!-- 1st row -->
+      <key code="50" output="`" />
+      <key code="18" output="&#x2160;" /> <!-- I -->
+      <key code="19" output="&#x2164;" /> <!-- V -->
+      <key code="20" output="&#x2169;" /> <!-- X -->
+      <key code="21" output="&#x216c;" /> <!-- L -->
+      <key code="23" output="&#x216d;" /> <!-- C -->
+      <key code="22" output="&#x216e;" /> <!-- D -->
+      <key code="26" output="&#x216f;" /> <!-- M -->
+      <key code="28" output="&#x2181;" /> <!-- DD -->
+      <key code="25" output="&#x2182;" /> <!-- CCDD --> 
+      <key code="29" action="zero" />
+      <key code="27" output="-" />
+      <key code="24" action="equals" />
+      
+      <!-- 2nd row -->
+      <key code="12" output="&#x03b8;" /> <!-- theta -->
+      <key code="13" action="omega" />
+      <key code="14" action="epsilon" />
+      <key code="15" action="rho" />
+      <key code="17" output="&#x03c4;" /> <!-- tau -->
+      <key code="16" output="&#x03c8;" /> <!-- psi -->
+      <key code="32" action="upsilon" />
+      <key code="34" action="iota" />
+      <key code="31" action="omicron" />
+      <key code="35" output="&#x03c0;" /> <!-- pi -->
+      <key code="33" output="[" />
+      <key code="30" output="]" />
+      <key code="42" output="\" />
+      
+      <!-- 3rd row -->
+      <key code="0" action="alpha" />
+      <key code="1" output="&#x03c3;" /> <!-- sigma -->
+      <key code="2" output="&#x03b4;" /> <!-- delta -->
+      <key code="3" output="&#x03c6;" /> <!-- phi -->
+      <key code="5" output="&#x03b3;" /> <!-- gamma -->
+      <key code="4" action="eta" />
+      <key code="38" action="j" />
+      <key code="40" output="&#x03ba;" /> <!-- kappa -->
+      <key code="37" output="&#x03bb;" /> <!-- lambda -->
+      <key code="41" output=";"/>
+      <key code="39" output="'" />
+      
+      <!-- 4th row -->
+      <key code="6" output="&#x03b6;" /> <!-- zeta -->
+      <key code="7" output="&#x03be;" /> <!-- xi -->
+      <key code="8" output="&#x03c7;" /> <!-- chi -->
+      <key code="9" action="thereexists" />
+      <key code="11" output="&#x03b2;" /> <!-- beta -->
+      <key code="45" output="&#x03bd;" /> <!-- nu -->
+      <key code="46" output="&#x03bc;" /> <!-- mu -->
+      <key code="43" output="," />
+      <key code="47" output="." />
+      <key code="44" output="/" />
+    </keyMap>
+    <keyMap index="7" baseMapSet="ANSI" baseIndex="6"> <!-- both shifts caps -->
+      <!-- 2nd row -->
+      <key code="12" output="&#x0398;" /> <!-- THETA -->
+      <key code="13" action="OMEGA" />
+      <key code="14" action="EPSILON" />
+      <key code="15" action="RHO" />
+      <key code="17" output="&#x03a4;" /> <!-- TAU -->
+      <key code="16" output="&#x03a8;" /> <!-- PSI -->
+      <key code="32" action="UPSILON" />
+      <key code="34" action="IOTA" />
+      <key code="31" action="OMICRON" />
+      <key code="35" output="&#x03a0;" /> <!-- PI -->
+      <key code="33" output="[" />
+      <key code="30" output="]" />
+      <key code="42" output="\" />
+      
+      <!-- 3rd row -->
+      <key code="0" action="ALPHA" />
+      <key code="1" output="&#x03a3;" /> <!-- SIGMA -->
+      <key code="2" output="&#x0394;" /> <!-- DELTA -->
+      <key code="3" output="&#x03a6;" /> <!-- PHI -->
+      <key code="5" output="&#x0393;" /> <!-- GAMMA -->
+      <key code="4" action="ETA" />
+      <key code="38" action="J" />
+      <key code="40" output="&#x039a;" /> <!-- KAPPA -->
+      <key code="37" output="&#x039b;" /> <!-- LAMBDA -->
+      <key code="41" output=";"/>
+      <key code="39" output="'" />
+      
+      <!-- 4th row -->
+      <key code="6" output="&#x0396;" /> <!-- ZETA -->
+      <key code="7" output="&#x039e;" /> <!-- XI -->
+      <key code="8" output="&#x03a7;" /> <!-- CHI -->
+      <key code="9" output="&#x2200;" /> <!-- for all -->
+      <key code="11" output="&#x0392;" /> <!-- BETA -->
+      <key code="45" output="&#x039d;" /> <!-- NU -->
+      <key code="46" output="&#x039c;" /> <!-- MU -->
+      <key code="43" output="," />
+      <key code="47" output="." />
+      <key code="44" output="/" />
+    </keyMap>
+    <keyMap index="8" baseMapSet="ANSI" baseIndex="7"> <!-- option both shifts -->
+      <!-- 1st row -->
+      <key code="50" output="`" />
+      <key code="18" output="&#x2170;" /> <!-- i -->
+      <key code="19" output="&#x2174;" /> <!-- v -->
+      <key code="20" output="&#x2179;" /> <!-- x -->
+      <key code="21" output="&#x217c;" /> <!-- l -->
+      <key code="23" output="&#x217d;" /> <!-- c -->
+      <key code="22" output="&#x217e;" /> <!-- d -->
+      <key code="26" output="&#x217f;" /> <!-- m -->
+      <key code="28" output="&#x2181;" /> <!-- DD -->
+      <key code="25" output="&#x2182;" /> <!-- CCDD --> 
+      <key code="29" action="zero" />
+      <key code="27" output="-" />
+      <key code="24" action="equals" />
+    </keyMap>
+    <keyMap index="9" baseMapSet="ANSI" baseIndex="0"> <!-- control -->
+      <!-- 1st row -->
+      <key code="27" output="&#x001f;" />
+      
+      <!-- 2nd row -->
+      <key code="12" output="&#x0011;" />
+      <key code="13" output="&#x0017;" />
+      <key code="14" output="&#x0005;" />
+      <key code="15" output="&#x0012;" />
+      <key code="17" output="&#x0014;" />
+      <key code="16" output="&#x0019;" />
+      <key code="34" output="&#x0009;" />
+      <key code="31" output="&#x000f;" />
+      <key code="32" output="&#x0015;" />
+      <key code="35" output="&#x0010;" />
+      <key code="33" output="&#x001b;" />
+      <key code="30" output="&#x001d;" />
+      <key code="42" output="&#x001c;" />
+      
+      <!-- 3rd row -->
+      <key code="0" output="&#x0001;" />
+      <key code="1" output="&#x0013;" />
+      <key code="2" output="&#x0004;" />
+      <key code="3" output="&#x0006;" />
+      <key code="5" output="&#x0007;" />
+      <key code="4" output="&#x0008;" />
+      <key code="38" output="&#x000a;" />
+      <key code="40" output="&#x000b;" />
+      <key code="37" output="&#x000c;" />
+      
+      <!-- 4th row -->
+      <key code="6" output="&#x001a;" />
+      <key code="7" output="&#x0018;" />
+      <key code="8" output="&#x0003;" />
+      <key code="9" output="&#x0016;" />
+      <key code="11" output="&#x0002;" />
+      <key code="45" output="&#x000e;" />
+      <key code="46" output="&#x000d;" />
+      
+      <!-- No idea -->
+      <key code="36" output="&#x000d;" />
+      <key code="48" output="&#x0009;" />
+      <key code="51" output="&#x0008;" />
+      <key code="52" output="&#x0003;" />
+      <key code="53" output="&#x001b;" />
+      <!-- gap, 54 through 64 -->
+      <key code="66" output="&#x001d;" />
+      <!-- gap, 68 -->
+      <key code="70" output="&#x001c;" />
+      <key code="71" output="&#x001b;" />
+      <key code="72" output="&#x001f;" />
+      <!-- gap, 73-74 -->
+      <key code="76" output="&#x0003;" />
+      <key code="77" output="&#x001e;" />
+      <!-- gap, 79-80 -->
+      <!-- gap, 90 -->
+      <!-- gap, 93-95 -->
+      <key code="96" output="&#x0010;" />
+      <key code="97" output="&#x0010;" />
+      <key code="98" output="&#x0010;" />
+      <key code="99" output="&#x0010;" />
+      <key code="100" output="&#x0010;" />
+      <key code="101" output="&#x0010;" />
+      <key code="102" output="&#x0010;" />
+      <key code="103" output="&#x0010;" />
+      <key code="104" output="&#x0010;" />
+      <key code="105" output="&#x0010;" />
+      <key code="106" output="&#x0010;" />
+      <key code="107" output="&#x0010;" />
+      <key code="108" output="&#x0010;" />
+      <key code="109" output="&#x0010;" />
+      <key code="110" output="&#x0010;" />
+      <key code="111" output="&#x0010;" />
+      <key code="112" output="&#x0010;" />
+      <key code="113" output="&#x0010;" />
+      <key code="114" output="&#x0005;" />
+      <key code="115" output="&#x0001;" />
+      <key code="116" output="&#x000b;" />
+      <key code="117" output="&#x007f;" />
+      <key code="118" output="&#x0010;" />
+      <key code="119" output="&#x0004;" />
+      <key code="120" output="&#x0010;" />
+      <key code="121" output="&#x000c;" />
+      <key code="122" output="&#x0010;" />
+      <key code="123" output="&#x001c;" />
+      <key code="124" output="&#x001d;" />
+      <key code="125" output="&#x001f;" />
+      <key code="126" output="&#x001e;" />
+      <!-- gap, 127 -->
+    </keyMap>
+  </keyMapSet>
+  <actions>
+    <!-- actions for initiating dead key states -->
+    <action id="acute">
+      <when state="none" next="acute" />
+      <when state="acute" next="doubleacute" />
+      <when state="breve" next="breve-acute" />
+      <when state="cedilla" next="cedilla-acute" />
+      <when state="circumflex" next="circumflex-acute" />
+      <when state="diaeresis" next="diaeresis-acute" />
+      <when state="dotabove" next="acute-dotabove" />
+      <when state="hookabove" next="acute-hookabove" />
+      <when state="hookabove-ogonek" next="acute-hookabove-ogonek" />
+      <when state="horn" next="acute-horn" />
+      <when state="horn-ogonek" next="acute-horn-ogonek" />
+      <when state="macron" next="macron-acute" />
+      <when state="ogonek" next="acute-ogonek" />
+      <when state="ringabove" next="ringabove-acute" />
+      <when state="stroke" next="stroke-acute" />
+      <when state="tilde" next="tilde-acute" />
+    </action>
+    <action id="doubleacute">
+      <when state="none" next="doubleacute" />
+    </action>
+    <action id="bar">
+      <when state="none" next="bar" />
+      <when state="bar" next="doublebar" />
+      <when state="dotabove" next="bar-dotabove" />
+      <when state="linebelow" next="bar-linebelow" />
+      <when state="macron" next="bar-macron" />
+      <when state="stroke" next="bar-stroke" />
+    </action>
+    <action id="breve">
+      <when state="none" next="breve" />
+      <when state="acute" next="breve-acute" />
+      <when state="breve" next="doublebreve" />
+      <when state="cedilla" next="cedilla-breve" />
+      <when state="dotbelow" next="breve-dotbelow" />
+      <when state="grave" next="breve-grave" />
+      <when state="hookabove" next="breve-hookabove" />
+      <when state="tilde" next="breve-tilde" />
+    </action>
+    <action id="caron">
+      <when state="none" next="caron" />
+      <when state="dotabove" next="caron-dotabove" />
+      <when state="diaeresis" next="diaeresis-caron" />
+    </action>
+    <action id="cedilla">
+      <when state="none" next="cedilla" />
+      <when state="acute" next="cedilla-acute" />
+      <when state="breve" next="cedilla-breve" />
+    </action>
+    <action id="circumflex">
+      <when state="none" next="circumflex" />
+      <when state="acute" next="circumflex-acute" />
+      <when state="dotbelow" next="circumflex-dotbelow" />
+      <when state="grave" next="circumflex-grave" />
+      <when state="hookabove" next="circumflex-hookabove" />
+      <when state="tilde" next="circumflex-tilde" />
+    </action>
+    <action id="commabelow">
+      <when state="none" next="commabelow" />
+    </action>
+    <action id="diaeresis">
+      <when state="none" next="diaeresis" />
+      <when state="acute" next="diaeresis-acute" />
+      <when state="caron" next="diaeresis-caron" />
+      <when state="dotabove" next="diaeresis-dotabove" />
+      <when state="grave" next="diaeresis-grave" />
+      <when state="macron" next="macron-diaeresis" />
+      <when state="tilde" next="tilde-diaeresis" />
+    </action>
+    <action id="dotabove">
+      <when state="none" next="dotabove" />
+      <when state="acute" next="acute-dotabove" />
+      <when state="bar" next="bar-dotabove" />
+      <when state="caron" next="caron-dotabove" />
+      <when state="diaeresis" next="diaeresis-dotabove" />
+      <when state="dotabove" next="diaeresis" />
+      <when state="dotbelow" next="dotbelow-dotabove" />
+      <when state="macron" next="dotabove-macron" />
+    </action>
+    <action id="dotbelow">
+      <when state="none" next="dotbelow" />
+      <when state="breve" next="breve-dotbelow" />
+      <when state="circumflex" next="circumflex-dotbelow" />
+      <when state="dotabove" next="dotbelow-dotabove" />
+      <when state="macron" next="dotbelow-macron" />
+    </action>
+    <action id="grave">
+      <when state="none" next="grave" />
+      <when state="breve" next="breve-grave" />
+      <when state="circumflex" next="circumflex-grave" />
+      <when state="diaeresis" next="diaeresis-grave" />
+      <when state="grave" next="doublegrave" />
+      <when state="hookabove" next="grave-hookabove" />
+      <when state="horn" next="grave-horn" />
+      <when state="hookabove-ogonek" next="grave-hookabove-ogonek" />
+      <when state="horn-ogonek" next="grave-horn-ogonek" />
+      <when state="macron" next="grave-macron" />
+      <when state="ogonek" next="grave-ogonek" />
+    </action>
+    <action id="hook">
+      <when state="none" next="hook" />
+    </action>
+    <action id="hookabove">
+      <when state="none" next="hookabove" />
+      <when state="acute" next="acute-hookabove" />
+      <when state="acute-ogonek" next="acute-hookabove-ogonek" />
+      <when state="breve" next="breve-hookabove" />
+      <when state="circumflex" next="circumflex-hookabove" />
+      <when state="grave" next="grave-hookabove" />
+      <when state="grave-ogonek" next="grave-hookabove-ogonek" />
+      <when state="ogonek" next="hookabove-ogonek" />
+      <when state="ogonek-tilde" next="hookabove-ogonek-tilde" />
+      <when state="tilde" next="hookabove-tilde" />
+    </action>
+    <action id="horn">
+      <when state="none" next="horn" />
+      <when state="acute" next="acute-horn" />
+      <when state="acute-ogonek" next="acute-horn-ogonek" />
+      <when state="dotbelow" next="horn-dotbelow" />
+      <when state="grave" next="grave-horn" />
+      <when state="grave-ogonek" next="grave-horn-ogonek" />
+      <when state="hookabove" next="horn-hookabove" />
+      <when state="ogonek" next="horn-ogonek" />
+      <when state="ogonek-tilde" next="horn-ogonek-tilde" />
+      <when state="tilde" next="horn-tilde" />
+    </action>
+    <action id="linebelow">
+      <when state="none" next="linebelow" />
+      <when state="bar" next="bar-linebelow" />
+      <when state="linebelow" next="doublelinebelow" />
+      <when state="macron" next="linebelow-macron" />
+      <when state="stroke" next="linebelow-stroke" />
+      <when state="tilde" next="linebelow-tilde" />
+      <when state="tildebelow" next="linebelow-tildebelow" />
+    </action>
+    <action id="macron">
+      <when state="none" next="macron" />
+      <when state="acute" next="macron-acute" />
+      <when state="bar" next="bar-macron" />
+      <when state="diaeresis" next="diaeresis-macron" />
+      <when state="dotabove" next="dotabove-macron" />
+      <when state="dotbelow" next="dotbelow-macron" />
+      <when state="grave" next="grave-macron" />
+      <when state="linebelow" next="linebelow-macron" />
+      <when state="macron" next="doublemacron" />
+      <when state="ogonek" next="macron-ogonek" />
+      <when state="stroke" next="macron-stroke" />
+      <when state="tilde" next="tilde-macron" />
+    </action>
+    <action id="ogonek">
+      <when state="none" next="ogonek" />
+      <when state="acute" next="acute-ogonek" />
+      <when state="acute-hookabove" next="acute-hookabove-ogonek" />
+      <when state="acute-horn" next="acute-horn-ogonek" />
+      <when state="grave" next="grave-ogonek" />
+      <when state="grave-hookabove" next="grave-hookabove-ogonek" />
+      <when state="grave-horn" next="grave-horn-ogonek" />
+      <when state="hookabove" next="hookabove-ogonek" />
+      <when state="hookabove-tilde" next="hookabove-ogonek-tilde" />
+      <when state="horn" next="horn-ogonek" />
+      <when state="horn-tilde" next="horn-ogonek-tilde" />
+      <when state="macron" next="macron-ogonek" />
+      <when state="tilde" next="ogonek-tilde" />
+    </action>
+    <action id="ringabove">
+      <when state="none" next="ringabove" />
+      <when state="acute" next="ringabove-acute" />
+    </action>
+    <action id="stroke">
+      <when state="none" next="stroke" />
+      <when state="acute" next="stroke-acute" />
+      <when state="bar" next="bar-stroke" />
+      <when state="linebelow" next="linebelow-stroke" />
+      <when state="macron" next="macron-stroke" />
+      <when state="tilde" next="stroke-tilde" />
+      <when state="tildebelow" next="stroke-tildebelow" />
+    </action>
+    <action id="tilde">
+      <when state="none" next="tilde" />
+      <when state="acute" next="tilde-acute" />
+      <when state="breve" next="breve-tilde" />
+      <when state="circumflex" next="circumflex-tilde" />
+      <when state="diaeresis" next="tilde-diaeresis" />
+      <when state="hookabove" next="hookabove-tilde" />
+      <when state="hookabove-ogonek" next="hookabove-ogonek-tilde" />
+      <when state="horn" next="horn-tilde" />
+      <when state="horn-ogonek" next="horn-ogonek-tilde" />
+      <when state="linebelow" next="linebelow-tilde" />
+      <when state="macron" next="tilde-macron" />
+      <when state="ogonek" next="ogonek-tilde" />
+      <when state="stroke" next="stroke-tilde" />
+      <when state="tilde" next="doubletilde" />
+      <when state="tildebelow" next="tilde-tildebelow" />
+    </action>
+    <action id="tildebelow">
+      <when state="none" next="tildebelow" />
+      <when state="linebelow" next="linebelow-tildebelow" />
+      <when state="stroke" next="stroke-tildebelow" />
+      <when state="tilde" next="tilde-tildebelow" />
+      <when state="tildebelow" next="doubletildebelow" />
+    </action>
+    
+    <!-- actions for completing dead key states -->
+    <action id="zero">
+      <when state="none" output="0" />
+      <when state="stroke" output="&#x2205;" /> <!-- empty set -->
+    </action>
+    <action id="A">
+      <when state="none" output="A" />
+      <when state="acute" output="&#x00c1;" />
+      <when state="breve" output="&#x0102;" />
+      <when state="caron" output="&#x01cd;" />
+      <when state="circumflex" output="&#x00c2;" />
+      <when state="diaeresis" output="&#x00c4;" />
+      <when state="dotabove" output="&#x0226;" />
+      <when state="dotbelow" output="&#x1ea0;" />
+      <when state="grave" output="&#x00c0;" />
+      <when state="doublegrave" output="&#x0200;" />
+      <when state="hookabove" output="&#x1ea2;" />
+      <when state="invertedbreve" output="&#x0202;" />
+      <when state="macron" output="&#x0100;" />
+      <when state="ogonek" output="&#x0104;" />
+      <when state="ringabove" output="&#x00c5;" />
+      <when state="ringbelow" output="&#x1e00;" />
+      <when state="tilde" output="&#x00c3;" />
+      <when state="breve-acute" output="&#x1eae;" />
+      <when state="breve-dotbelow" output="&#x1eb6;" />
+      <when state="breve-grave" output="&#x1eb0;" />
+      <when state="breve-hookabove" output="&#x1eb2;" />
+      <when state="breve-tilde" output="&#x1eb4;" />
+      <when state="circumflex-acute" output="&#x1ea4;" />
+      <when state="circumflex-dotbelow" output="&#x1eac;" />
+      <when state="circumflex-grave" output="&#x1ea6;" />
+      <when state="circumflex-hookabove" output="&#x1ea8;" />
+      <when state="circumflex-tilde" output="&#x1eaa;" />
+      <when state="diaeresis-macron" output="&#x01de;" />
+      <when state="dotabove-macron" output="&#x01e0;" />
+      <when state="macron-diaeresis" output="&#x01de;" />
+      <when state="ringabove-acute" output="&#x01fa;" />
+    </action>
+    <action id="a">
+      <when state="none" output="a" />
+      <when state="acute" output="&#x00e1;" />
+      <when state="breve" output="&#x0103;" />
+      <when state="caron" output="&#x01ce;" />
+      <when state="circumflex" output="&#x00e2;" />
+      <when state="diaeresis" output="&#x00c5;" />
+      <when state="dotabove" output="&#x0227;" />
+      <when state="dotbelow" output="&#x1ea1;" />
+      <when state="grave" output="&#x00e0;" />
+      <when state="doublegrave" output="&#x0201;" />
+      <when state="hookabove" output="&#x1ea3;" />
+      <when state="invertedbreve" output="&#x0203;" />
+      <when state="macron" output="&#x0100;" />
+      <when state="ogonek" output="&#x0105;" />
+      <when state="righthalfring" output="&#x1e9a;" />
+      <when state="ringabove" output="&#x00e5;" />
+      <when state="ringbelow" output="&#x1e01;" />
+      <when state="tilde" output="&#x00e3;" />
+      <when state="breve-acute" output="&#x1eaf;" />
+      <when state="breve-dotbelow" output="&#x1eb7;" />
+      <when state="breve-grave" output="&#x1eb1;" />
+      <when state="breve-hookabove" output="&#x1eb3;" />
+      <when state="breve-tilde" output="&#x1eb5;" />
+      <when state="circumflex-acute" output="&#x1ea5;" />
+      <when state="circumflex-dotbelow" output="&#x1ead;" />
+      <when state="circumflex-grave" output="&#x1ea7;" />
+      <when state="circumflex-hookabove" output="&#x1ea9;" />
+      <when state="circumflex-tilde" output="&#x1eab;" />
+      <when state="diaeresis-macron" output="&#x01df;" />
+      <when state="dotabove-macron" output="&#x01e1;" />
+      <when state="macron-diaeresis" output="&#x01df;" />
+      <when state="ringabove-acute" output="&#x01fb;" />
+    </action>
+    <action id="B">
+      <when state="none" output="B" />
+      <when state="dotabove" output="&#x1e02;" />
+      <when state="dotbelow" output="&#x1e04;" />
+      <when state="hook" output="&#x0181;" />
+      <when state="linebelow" output="&#x1e06;" />
+      <when state="topbar" output="&#x0182;" />
+    </action>
+    <action id="b">
+      <when state="none" output="b" />
+      <when state="dotabove" output="&#x1e03;" />
+      <when state="dotbelow" output="&#x1e05;" />
+      <when state="hook" output="&#x0253;" />
+      <when state="linebelow" output="&#x1e07;" />
+      <when state="stroke" output="&#x0180;" />
+      <when state="topbar" output="&#x0183;" />
+    </action>
+    <action id="C">
+      <when state="none" output="C" />
+      <when state="acute" output="&#x0106;" />
+      <when state="caron" output="&#x010c;" />
+      <when state="cedilla" output="&#x00c7;" />
+      <when state="circumflex" output="&#x0108;" />
+      <when state="dotabove" output="&#x010a;" />
+      <when state="hook" output="&#x0187;" />
+      <when state="cedilla-acute" output="&#x1e08;" />
+    </action>
+    <action id="c">
+      <when state="none" output="c" />
+      <when state="acute" output="&#x0107;" />
+      <when state="caron" output="&#x010d;" />
+      <when state="cedilla" output="&#x00e7;" />
+      <when state="curl" output="&#x0255;" />
+      <when state="circumflex" output="&#x0109;" />
+      <when state="dotabove" output="&#x010b;" />
+      <when state="hook" output="&#x0188;" />
+      <when state="cedilla-acute" output="&#x1e09;" />
+    </action>
+    <action id="D">
+      <when state="none" output="D" />
+      <when state="caron" output="&#x010e;" />
+      <when state="cedilla" output="&#x1e10;" />
+      <when state="circumflexbelow" output="&#x1e12;" />
+      <when state="dotabove" output="&#x1e0a;" />
+      <when state="dotbelow" output="&#x1e0c;" />
+      <when state="hook" output="&#x018a;" />
+      <when state="linebelow" output="&#x1e0e;" />
+      <when state="stroke" output="&#x0110;" />
+      <when state="topbar" output="&#x018b;" />
+    </action>
+    <action id="d">
+      <when state="none" output="d" />
+      <when state="caron" output="&#x010f;" />
+      <when state="cedilla" output="&#x1e10;" />
+      <when state="circumflexbelow" output="&#x1e13;" />
+      <when state="curl" output="&#x0221;" />
+      <when state="dotabove" output="&#x1e0b;" />
+      <when state="dotbelow" output="&#x1e0d;" />
+      <when state="hook" output="&#x0257;" />
+      <when state="linebelow" output="&#x1e0f;" />
+      <when state="stroke" output="&#x0111;" />
+      <when state="retroflexhook" output="&#x0256;" /> <!-- same as "tail" -->
+      <when state="tail" output="&#x0256;" />
+      <when state="topbar" output="&#x018c;" />
+    </action>
+    <action id="E">
+      <when state="none" output="E" />
+      <when state="acute" output="&#x00c9;" />
+      <when state="breve" output="&#x0114;" />
+      <when state="caron" output="&#x011a;" />
+      <when state="cedilla" output="&#x0228;" />
+      <when state="circumflex" output="&#x00ca;" />
+      <when state="circumflexbelow" output="&#x1e18;" />
+      <when state="diaeresis" output="&#x00cb;" />
+      <when state="dotabove" output="&#x0116;" />
+      <when state="dotbelow" output="&#x1eb8;" />
+      <when state="grave" output="&#x00c8;" />
+      <when state="doublegrave" output="&#x0204;" />
+      <when state="hookabove" output="&#x13ba;" />
+      <when state="invertedbreve" output="&#x0206;" />
+      <when state="macron" output="&#x0112;" />
+      <when state="ogonek" output="&#x0118;" />
+      <when state="tilde" output="&#x1ebc;" />
+      <when state="tildebelow" output="&#x1e1a;" />
+      <when state="cedilla-breve" output="&#x1e1c;" />
+      <when state="circumflex-acute" output="&#x1ebe;" />
+      <when state="circumflex-dotbelow" output="&#x1ec6;" />
+      <when state="circumflex-grave" output="&#x1ec0;" />
+      <when state="circumflex-hookabove" output="&#x1ec2;" />
+      <when state="circumflex-tilde" output="&#x1ec4;" />
+      <when state="macron-acute" output="&#x1e16;" />
+      <when state="grave-macron" output="&#x1e14;" />
+    </action>
+    <action id="e">
+      <when state="none" output="e" />
+      <when state="acute" output="&#x00e9;" />
+      <when state="breve" output="&#x0115;" />
+      <when state="caron" output="&#x011b;" />
+      <when state="cedilla" output="&#x0229;" />
+      <when state="circumflex" output="&#x00ea;" />
+      <when state="circumflexbelow" output="&#x1e19;" />
+      <when state="diaeresis" output="&#x00cb;" />
+      <when state="dotabove" output="&#x0117;" />
+      <when state="dotbelow" output="&#x1eb9;" />
+      <when state="grave" output="&#x00e8;" />
+      <when state="doublegrave" output="&#x0205;" />
+      <when state="hookabove" output="&#x13bb;" />
+      <when state="invertedbreve" output="&#x0207;" />
+      <when state="macron" output="&#x0113;" />
+      <when state="ogonek" output="&#x0119;" />
+      <when state="tilde" output="&#x1ebd;" />
+      <when state="tildebelow" output="&#x1e1b;" />
+      <when state="cedilla-breve" output="&#x1e1d;" />
+      <when state="circumflex-acute" output="&#x1ebf;" />
+      <when state="circumflex-dotbelow" output="&#x1ec7;" />
+      <when state="circumflex-grave" output="&#x1ec1;" />
+      <when state="circumflex-hookabove" output="&#x1ec3;" />
+      <when state="circumflex-tilde" output="&#x1ec5;" />
+      <when state="macron-acute" output="&#x1e17;" />
+      <when state="grave-macron" output="&#x1e15;" />
+    </action>
+    <action id="F">
+      <when state="none" output="F" />
+      <when state="dotabove" output="&#x1e1e;" />
+      <when state="hook" output="&#x0191;" />
+    </action>
+    <action id="f">
+      <when state="none" output="f" />
+      <when state="dotabove" output="&#x1e1f;" />
+      <when state="hook" output="&#x0192;" />
+    </action>
+    <action id="G">
+      <when state="none" output="G" />
+      <when state="acute" output="&#x01f4;" />
+      <when state="breve" output="&#x011e;" />
+      <when state="caron" output="&#x01e6;" />
+      <when state="cedilla" output="&#x0122;" />
+      <when state="circumflex" output="&#x011c;" />
+      <when state="dotabove" output="&#x0120;" />
+      <when state="hook" output="&#x0193;" />
+      <when state="macron" output="&#x1e20;" />
+      <when state="stroke" output="&#x01e4;" />
+    </action>
+    <action id="g">
+      <when state="none" output="g" />
+      <when state="acute" output="&#x01f5;" />
+      <when state="breve" output="&#x011f;" />
+      <when state="caron" output="&#x01e7;" />
+      <when state="cedilla" output="&#x0123;" />
+      <when state="circumflex" output="&#x011d;" />
+      <when state="dotabove" output="&#x0121;" />
+      <when state="hook" output="&#x0260;" />
+      <when state="macron" output="&#x1e21;" />
+      <when state="stroke" output="&#x01e5;" />
+    </action>
+    <action id="H">
+      <when state="none" output="H" />
+      <when state="brevebelow" output="&#x1e2a;" />
+      <when state="caron" output="&#x021e;" />
+      <when state="cedilla" output="&#x1e28;" />
+      <when state="circumflex" output="&#x0124;" />
+      <when state="diaeresis" output="&#x1e26;" />
+      <when state="dotabove" output="&#x1e22;" />
+      <when state="dotbelow" output="&#x1e24;" />
+      <when state="stroke" output="&#x0126;" />
+    </action>
+    <action id="h">
+      <when state="none" output="h" />
+      <when state="brevebelow" output="&#x1e2b;" />
+      <when state="caron" output="&#x021f;" />
+      <when state="cedilla" output="&#x1e29;" />
+      <when state="circumflex" output="&#x0125;" />
+      <when state="diaeresis" output="&#x1e27;" />
+      <when state="dotabove" output="&#x1e23;" />
+      <when state="dotbelow" output="&#x1e25;" />
+      <when state="hook" output="&#x0266;" />
+      <when state="linebelow" output="&#x1e96;" />
+      <when state="stroke" output="&#x0127;" />
+    </action>
+    <action id="I">
+      <when state="none" output="I" />
+      <when state="acute" output="&#x00cd;" />
+      <when state="breve" output="&#x012c;" />
+      <when state="caron" output="&#x01cf;" />
+      <when state="circumflex" output="&#x00ce;" />
+      <when state="diaeresis" output="&#x00cf;" />
+      <when state="dotabove" output="&#x0130;" />
+      <when state="dotbelow" output="&#x1eca;" />
+      <when state="grave" output="&#x00cc;" />
+      <when state="doublegrave" output="&#x0208;" />
+      <when state="hookabove" output="&#x1ec8;" />
+      <when state="invertedbreve" output="&#x020a;" />
+      <when state="macron" output="&#x012a;" />
+      <when state="ogonek" output="&#x012e;" />
+      <when state="stroke" output="&#x0197;" />
+      <when state="tilde" output="&#x0128;" />
+      <when state="tildebelow" output="&#x1e2c;" />
+      <when state="diaeresis-acute" output="&#x1e2e;" />
+    </action>
+    <action id="i">
+      <when state="none" output="i" />
+      <when state="acute" output="&#x00ed;" />
+      <when state="breve" output="&#x012c;" />
+      <when state="caron" output="&#x01d0;" />
+      <when state="circumflex" output="&#x00ee;" />
+      <when state="diaeresis" output="&#x00ef;" />
+      <when state="dotbelow" output="&#x1ecb;" />
+      <when state="grave" output="&#x00ec;" />
+      <when state="doublegrave" output="&#x0209;" />
+      <when state="hookabove" output="&#x1ec9;" />
+      <when state="invertedbreve" output="&#x020b;" />
+      <when state="macron" output="&#x012b;" />
+      <when state="ogonek" output="&#x012f;" />
+      <when state="stroke" output="&#x0268;" />
+      <when state="tilde" output="&#x0129;" />
+      <when state="tildebelow" output="&#x1e2d;" />
+      <when state="diaeresis-acute" output="&#x1e2f;" />
+    </action>
+    <action id="dotless_i">
+      <when state="none" output="&#x0131;" />
+      <when state="dotabove" output="i" />  <!-- just use regular i -->
+    </action>
+    <action id="J">
+      <when state="none" output="J" />
+      <when state="circumflex" output="&#x0134;" />
+    </action>
+    <action id="j">
+      <when state="none" output="j" />
+      <when state="caron" output="&#x01f0;" />
+      <when state="circumflex" output="&#x0135;" />
+      <!-- FIXME: What about crossedtail? -->
+    </action>
+    <action id="dotless_j-stroke">
+      <when state="none" output="&#x025f;" />
+      <when state="hook" output="&#x0284;" />
+    </action>
+    <action id="K">
+      <when state="none" output="K" />
+      <when state="acute" output="&#x1e30;" />
+      <when state="caron" output="&#x01e8;" />
+      <when state="cedilla" output="&#x0136;" />
+      <when state="dotbelow" output="&#x1e32;" />
+      <when state="hook" output="&#x0198;" />
+      <when state="linebelow" output="&#x1e34;" />
+    </action>
+    <action id="k">
+      <when state="none" output="k" />
+      <when state="acute" output="&#x1e31;" />
+      <when state="caron" output="&#x01e9;" />
+      <when state="cedilla" output="&#x0137;" />
+      <when state="dotbelow" output="&#x1e33;" />
+      <when state="hook" output="&#x0199;" />
+      <when state="linebelow" output="&#x1e35;" />
+    </action>
+    <action id="L">
+      <when state="none" output="L" />
+      <when state="acute" output="&#x0139;" />
+      <when state="caron" output="&#x013d;" />
+      <when state="cedilla" output="&#x013b;" />
+      <when state="circumflexbelow" output="&#x1e3c;" />
+      <when state="dotbelow" output="&#x1e36;" />
+      <when state="linebelow" output="&#x1e3a;" />
+      <when state="middledot" output="&#x013f;" />
+      <when state="stroke" output="&#x0141;" />
+      <when state="dotbelow-macron" output="&#x1e38;" />
+    </action>
+    <action id="l">
+      <when state="none" output="l" />
+      <when state="acute" output="&#x013a;" />
+      <when state="bar" output="&#x019a;" />
+      <when state="belt" output="&#x026c;" />
+      <when state="caron" output="&#x013e;" />
+      <when state="cedilla" output="&#x013c;" />
+      <when state="circumflexbelow" output="&#x1e3d;" />
+      <when state="curl" output="&#x0234;" />
+      <when state="dotbelow" output="&#x1e36;" />
+      <when state="linebelow" output="&#x1e3b;" />
+      <when state="middledot" output="&#x0140;" />
+      <when state="middletilde" output="&#x026b;" />
+      <when state="retroflexhook" output="&#x026d;" />
+      <when state="stroke" output="&#x0142;" />
+      <when state="dotbelow-macron" output="&#x1e39;" />
+    </action>
+    <action id="M">
+      <when state="none" output="M" />
+      <when state="acute" output="&#x1e3e;" />
+      <when state="dotabove" output="&#x1e40;" />
+      <when state="dotbelow" output="&#x1e42;" />
+    </action>
+    <action id="m">
+      <when state="none" output="m" />
+      <when state="acute" output="&#x1e3f;" />
+      <when state="dotabove" output="&#x1e41;" />
+      <when state="dotbelow" output="&#x1e43;" />
+      <when state="hook" output="&#x0271;" />
+    </action>
+    <action id="N">
+      <when state="none" output="N" />
+      <when state="acute" output="&#x0143;" />
+      <when state="caron" output="&#x0147;" />
+      <when state="cedilla" output="&#x0145;" />
+      <when state="circumflexbelow" output="&#x1e4a;" />
+      <when state="dotabove" output="&#x1e44;" />
+      <when state="dotbelow" output="&#x1e46;" />
+      <when state="grave" output="&#x01f8;" />
+      <when state="lefthook" output="&#x019d;" />
+      <when state="linebelow" output="&#x1e48;" />
+      <when state="tilde" output="&#x00d1;" />
+      <!-- FIXME: What about longrightleg? -->
+    </action>
+    <action id="n">
+      <when state="none" output="n" />
+      <when state="acute" output="&#x0144;" />
+      <when state="caron" output="&#x0148;" />
+      <when state="cedilla" output="&#x0146;" />
+      <when state="circumflexbelow" output="&#x1e4b;" />
+      <when state="curl" output="&#x0235;" />
+      <when state="dotabove" output="&#x1e45;" />
+      <when state="dotbelow" output="&#x1e47;" />
+      <when state="grave" output="&#x01f9;" />
+      <when state="lefthook" output="&#x0272;" />
+      <when state="linebelow" output="&#x1e49;" />
+      <when state="retroflexhook" output="&#x0273;" />
+      <when state="tilde" output="&#x00f1;" />
+      <!-- FIXME: What about longrightleg? -->
+    </action>
+    <action id="O">
+      <when state="none" output="O" />
+      <when state="acute" output="&#x00d3;" />
+      <when state="doubleacute" output="&#x0150;" />
+      <when state="breve" output="&#x014e;" />
+      <when state="caron" output="&#x01d1;" />
+      <when state="circumflex" output="&#x00d4;" />
+      <when state="diaeresis" output="&#x00d6;" />
+      <when state="dotabove" output="&#x022e;" />
+      <when state="dotbelow" output="&#x1ecc;" />
+      <when state="grave" output="&#x00d2;" />
+      <when state="doublegrave" output="&#x020c;" />
+      <when state="hookabove" output="&#x1ece;" />
+      <when state="horn" output="&#x01a0;" />
+      <when state="invertedbreve" output="&#x020e;" />
+      <when state="macron" output="&#x014c;" />
+      <when state="middletilde" output="&#x019f;" />
+      <when state="ogonek" output="&#x01ea;" />
+      <when state="stroke" output="&#x00d8;" />
+      <when state="tilde" output="&#x00d5;" />
+      <when state="circumflex-acute" output="&#x1ed0;" />
+      <when state="circumflex-dotbelow" output="&#x1ed8;" />
+      <when state="circumflex-grave" output="&#x1ed2;" />
+      <when state="circumflex-hookabove" output="&#x1ed4;" />
+      <when state="circumflex-tilde" output="&#x1ed6;" />
+      <when state="diaeresis-macron" output="&#x022a;" />
+      <when state="dotabove-macron" output="&#x0230;" />
+      <when state="acute-horn" output="&#x1eda;" />
+      <when state="horn-dotbelow" output="&#x1ee2;" />
+      <when state="grave-horn" output="&#x1edc;" />
+      <when state="horn-hookabove" output="&#x1ede;" />
+      <when state="horn-tilde" output="&#x1ee0;" />
+      <when state="macron-acute" output="&#x1e52;" />
+      <when state="macron-diaeresis" output="&#x022a;" />
+      <when state="grave-macron" output="&#x1e50;" />
+      <when state="macron-ogonek" output="&#x01ec;" />
+      <when state="stroke-acute" output="&#x01fe;" />
+      <when state="tilde-acute" output="&#x1e4c;" />
+      <when state="tilde-diaeresis" output="&#x1e4e;" />
+      <when state="tilde-macron" output="&#x022c;" />
+    </action>
+    <action id="o">
+      <when state="none" output="o" />
+      <when state="acute" output="&#x00f3;" />
+      <when state="doubleacute" output="&#x0151;" />
+      <when state="breve" output="&#x014f;" />
+      <when state="caron" output="&#x01d2;" />
+      <when state="circumflex" output="&#x00f4;" />
+      <when state="diaeresis" output="&#x00f6;" />
+      <when state="dotabove" output="&#x022f;" />
+      <when state="dotbelow" output="&#x1ecd;" />
+      <when state="grave" output="&#x00f2;" />
+      <when state="doublegrave" output="&#x020d;" />
+      <when state="hookabove" output="&#x1ecf;" />
+      <when state="horn" output="&#x01a1;" />
+      <when state="invertedbreve" output="&#x020e;" />
+      <when state="macron" output="&#x014d;" />
+      <when state="ogonek" output="&#x01eb;" />
+      <when state="stroke" output="&#x00f8;" />
+      <when state="tilde" output="&#x00f5;" />
+      <when state="circumflex-acute" output="&#x1ed1;" />
+      <when state="circumflex-dotbelow" output="&#x1ed8;" />
+      <when state="circumflex-grave" output="&#x1ed3;" />
+      <when state="circumflex-hookabove" output="&#x1ed5;" />
+      <when state="circumflex-tilde" output="&#x1ed6;" />
+      <when state="diaeresis-macron" output="&#x022b;" />
+      <when state="dotabove-macron" output="&#x0230;" />
+      <when state="acute-horn" output="&#x1edb;" />
+      <when state="horn-dotbelow" output="&#x1ee3;" />
+      <when state="grave-horn" output="&#x1edd;" />
+      <when state="horn-hookabove" output="&#x1edf;" />
+      <when state="horn-tilde" output="&#x1ee1;" />
+      <when state="macron-acute" output="&#x1e53;" />
+      <when state="macron-diaeresis" output="&#x022b;" />
+      <when state="grave-macron" output="&#x1e50;" />
+      <when state="macron-ogonek" output="&#x01ed;" />
+      <when state="stroke-acute" output="&#x01ff;" />
+      <when state="tilde-acute" output="&#x1e4d;" />
+      <when state="tilde-diaeresis" output="&#x1e4e;" />
+      <when state="tilde-macron" output="&#x022d;" />
+    </action>
+    <action id="P">
+      <when state="none" output="P" />
+      <when state="acute" output="&#x1e54;" />
+      <when state="dotabove" output="&#x1e56;" />
+      <when state="hook" output="&#x01a4;" />
+    </action>
+    <action id="p">
+      <when state="none" output="p" />
+      <when state="acute" output="&#x1e55;" />
+      <when state="dotabove" output="&#x1e57;" />
+      <when state="hook" output="&#x01a5;" />
+    </action>
+    <action id="q">
+      <when state="none" output="q" />
+      <when state="hook" output="&#x02a0;" />
+    </action>
+    <action id="R">
+      <when state="none" output="R" />
+      <when state="acute" output="&#x0154;" />
+      <when state="caron" output="&#x0158;" />
+      <when state="cedilla" output="&#x0156;" />
+      <when state="dotabove" output="&#x1e58;" />
+      <when state="dotbelow" output="&#x1e5a;" />
+      <when state="doublegrave" output="&#x0210;" />
+      <when state="invertedbreve" output="&#x0212;" />
+      <when state="linebelow" output="&#x1e5e;" />
+      <when state="dotbelow-macron" output="&#x1e5c;" />
+    </action>
+    <action id="r">
+      <when state="none" output="r" />
+      <when state="acute" output="&#x0155;" />
+      <when state="caron" output="&#x0159;" />
+      <when state="cedilla" output="&#x0157;" />
+      <when state="dotabove" output="&#x1e59;" />
+      <when state="dotbelow" output="&#x1e5b;" />
+      <when state="doublegrave" output="&#x0211;" />
+      <when state="invertedbreve" output="&#x0213;" />
+      <when state="linebelow" output="&#x1e5f;" />
+      <when state="dotbelow-macron" output="&#x1e5d;" />
+      <!-- FIXME: what about longleg, tail, and fishhook? -->
+    </action>
+    <action id="S">
+      <when state="none" output="S" />
+      <when state="acute" output="&#x015a;" />
+      <when state="caron" output="&#x0160;" />
+      <when state="cedilla" output="&#x015e;" />
+      <when state="circumflex" output="&#x015c;" />
+      <when state="commabelow" output="&#x0218;" />
+      <when state="dotabove" output="&#x1e60;" />
+      <when state="dotbelow" output="&#x1e62;" />
+      <when state="acute-dotabove" output="&#x1e64;" />
+      <when state="caron-dotabove" output="&#x1e66;" />
+      <when state="dotbelow-dotabove" output="&#x1e68;" />
+    </action>
+    <action id="s">
+      <when state="none" output="s" />
+      <when state="acute" output="&#x015b;" />
+      <when state="caron" output="&#x0161;" />
+      <when state="cedilla" output="&#x015f;" />
+      <when state="circumflex" output="&#x015d;" />
+      <when state="commabelow" output="&#x0219;" />
+      <when state="dotabove" output="&#x1e61;" />
+      <when state="dotbelow" output="&#x1e63;" />
+      <when state="hook" output="&#x0282;" />
+      <when state="acute-dotabove" output="&#x1e65;" />
+      <when state="caron-dotabove" output="&#x1e67;" />
+      <when state="dotbelow-dotabove" output="&#x1e69;" />
+    </action>
+    <action id="long_s">
+      <when state="none" output="&#x017f;" />
+      <when state="dotabove" output="&#x1e9b;" />
+    </action>
+    <action id="T">
+      <when state="none" output="T" />
+      <when state="caron" output="&#x0164;" />
+      <when state="cedilla" output="&#x0162;" />
+      <when state="circumflexbelow" output="&#x1e70;" />
+      <when state="commabelow" output="&#x021a;" />
+      <when state="dotabove" output="&#x1e6a;" />
+      <when state="dotbelow" output="&#x1e6c;" />
+      <when state="hook" output="&#x01ac;" />
+      <when state="linebelow" output="&#x1e6e;" />
+      <when state="retroflexhook" output="&#x01ae;" />
+      <when state="stroke" output="&#x0166;" />
+    </action>
+    <action id="t">
+      <when state="none" output="t" />
+      <when state="caron" output="&#x0165;" />
+      <when state="cedilla" output="&#x0163;" />
+      <when state="circumflexbelow" output="&#x1e71;" />
+      <when state="commabelow" output="&#x021b;" />
+      <when state="curl" output="&#x0236;" />
+      <when state="diaeresis" output="&#x1e97;" />
+      <when state="dotabove" output="&#x1e6b;" />
+      <when state="dotbelow" output="&#x1e6d;" />
+      <when state="hook" output="&#x01ad;" />
+      <when state="linebelow" output="&#x1e6f;" />
+      <when state="palatalhook" output="&#x01ab;" />
+      <when state="retroflexhook" output="&#x0288;" />
+      <when state="stroke" output="&#x0167;" />
+    </action>
+    <action id="U">
+      <when state="none" output="U" />
+      <when state="acute" output="&#x00da;" />
+      <when state="doubleacute" output="&#x0170;" />
+      <when state="breve" output="&#x016d;" />
+      <when state="caron" output="&#x01d3;" />
+      <when state="circumflex" output="&#x00db;" />
+      <when state="circumflexbelow" output="&#x1e76;" />
+      <when state="diaeresis" output="&#x00dc;" />
+      <when state="diaeresisbelow" output="&#x1e72;" />
+      <when state="dotbelow" output="&#x1ee4;" />
+      <when state="grave" output="&#x00d9;" />
+      <when state="doublegrave" output="&#x0214;" />
+      <when state="hookabove" output="&#x1ee6;" />
+      <when state="horn" output="&#x01af;" />
+      <when state="invertedbreve" output="&#x0216;" />
+      <when state="macron" output="&#x016a;" />
+      <when state="ogonek" output="&#x0172;" />
+      <when state="ringabove" output="&#x016e;" />
+      <when state="tilde" output="&#x0168;" />
+      <when state="tildebelow" output="&#x1e74;" />
+      <when state="diaeresis-acute" output="&#x01d7;" />
+      <when state="diaeresis-caron" output="&#x01d9;" />
+      <when state="diaeresis-grave" output="&#x01db;" />
+      <when state="diaeresis-macron" output="&#x01d5;" />
+      <when state="acute-horn" output="&#x1ee8;" />
+      <when state="horn-dotbelow" output="&#x1ef0;" />
+      <when state="grave-horn" output="&#x1eea;" />
+      <when state="horn-hookabove" output="&#x1eec;" />
+      <when state="horn-tilde" output="&#x1eee;" />
+      <when state="macron-diaeresis" output="&#x1e7a;" />
+      <when state="tilde-acute" output="&#x1e78;" />
+    </action>
+    <action id="u">
+      <when state="none" output="u" />
+      <when state="acute" output="&#x00fa;" />
+      <when state="doubleacute" output="&#x0171;" />
+      <when state="bar" output="&#x0289;" />
+      <when state="breve" output="&#x016e;" />
+      <when state="caron" output="&#x01d4;" />
+      <when state="circumflex" output="&#x00fb;" />
+      <when state="circumflexbelow" output="&#x1e77;" />
+      <when state="diaeresis" output="&#x00fc;" />
+      <when state="diaeresisbelow" output="&#x1e73;" />
+      <when state="dotbelow" output="&#x1ee5;" />
+      <when state="grave" output="&#x00f9;" />
+      <when state="doublegrave" output="&#x0215;" />
+      <when state="hookabove" output="&#x1ee7;" />
+      <when state="horn" output="&#x01b0;" />
+      <when state="invertedbreve" output="&#x0217;" />
+      <when state="macron" output="&#x016b;" />
+      <when state="ogonek" output="&#x0173;" />
+      <when state="ringabove" output="&#x016f;" />
+      <when state="tilde" output="&#x0169;" />
+      <when state="tildebelow" output="&#x1e75;" />
+      <when state="diaeresis-acute" output="&#x01d8;" />
+      <when state="diaeresis-caron" output="&#x01da;" />
+      <when state="diaeresis-grave" output="&#x01dc;" />
+      <when state="diaeresis-macron" output="&#x01d6;" />
+      <when state="acute-horn" output="&#x1ee9;" />
+      <when state="horn-dotbelow" output="&#x1ef1;" />
+      <when state="grave-horn" output="&#x1eeb;" />
+      <when state="horn-hookabove" output="&#x1eed;" />
+      <when state="horn-tilde" output="&#x1eef;" />
+      <when state="macron-diaeresis" output="&#x1e7b;" />
+      <when state="tilde-acute" output="&#x1e79;" />
+    </action>
+    <action id="V">
+      <when state="none" output="V" />
+      <when state="dotbelow" output="&#x1e7e;" />
+      <when state="hook" output="&#x01b2;" />
+      <when state="tilde" output="&#x1e7c;" />
+    </action>
+    <action id="v">
+      <when state="none" output="v" />
+      <when state="dotbelow" output="&#x1e7f;" />
+      <when state="hook" output="&#x028b;" />
+      <when state="tilde" output="&#x1e7d;" />
+    </action>
+    <action id="W">
+      <when state="none" output="W" />
+      <when state="acute" output="&#x1e82;" />
+      <when state="circumflex" output="&#x0174;" />
+      <when state="diaeresis" output="&#x1e84;" />
+      <when state="dotabove" output="&#x1e86;" />
+      <when state="dotbelow" output="&#x1e88;" />
+      <when state="grave" output="&#x1e80;" />
+    </action>
+    <action id="w">
+      <when state="none" output="w" />
+      <when state="acute" output="&#x1e83;" />
+      <when state="circumflex" output="&#x0175;" />
+      <when state="diaeresis" output="&#x1e85;" />
+      <when state="dotabove" output="&#x1e87;" />
+      <when state="dotbelow" output="&#x1e88;" />
+      <when state="grave" output="&#x1e81;" />
+      <when state="ringabove" output="&#x1e98;" />
+    </action>
+    <action id="X">
+      <when state="none" output="X" />
+      <when state="diaeresis" output="&#x1e8c;" />
+      <when state="dotabove" output="&#x1e8a;" />
+    </action>
+    <action id="x">
+      <when state="none" output="x" />
+      <when state="diaeresis" output="&#x1e8d;" />
+      <when state="dotabove" output="&#x1e8b;" />
+    </action>
+    <action id="Y">
+      <when state="none" output="Y" />
+      <when state="acute" output="&#x00dd;" />
+      <when state="circumflex" output="&#x0176;" />
+      <when state="diaeresis" output="&#x0178;" />
+      <when state="dotabove" output="&#x1e8e;" />
+      <when state="dotbelow" output="&#x1ef4;" />
+      <when state="grave" output="&#x1ef2;" />
+      <when state="hook" output="&#x01b3;" />
+      <when state="hookabove" output="&#x1ef6;" />
+      <when state="macron" output="&#x0232;" />
+      <when state="tilde" output="&#x1ef8;" />
+    </action>
+    <action id="y">
+      <when state="none" output="y" />
+      <when state="acute" output="&#x00fd;" />
+      <when state="circumflex" output="&#x0177;" />
+      <when state="diaeresis" output="&#x00ff;" />
+      <when state="dotabove" output="&#x1e8f;" />
+      <when state="dotbelow" output="&#x1ef5;" />
+      <when state="grave" output="&#x1ef3;" />
+      <when state="hook" output="&#x01b4;" />
+      <when state="hookabove" output="&#x1ef7;" />
+      <when state="macron" output="&#x0233;" />
+      <when state="ringabove" output="&#x1e99;" />
+      <when state="tilde" output="&#x1ef9;" />
+    </action>
+    <action id="Z">
+      <when state="none" output="Z" />
+      <when state="acute" output="&#x0179;" />
+      <when state="caron" output="&#x017d;" />
+      <when state="circumflex" output="&#x1e90;" />
+      <when state="dotabove" output="&#x017b;" />
+      <when state="dotbelow" output="&#x1e92;" />
+      <when state="hook" output="&#x0224;" />
+      <when state="linebelow" output="&#x1e94;" />
+      <when state="stroke" output="&#x01b5;" />
+    </action>
+    <action id="z">
+      <when state="none" output="z" />
+      <when state="acute" output="&#x017a;" />
+      <when state="caron" output="&#x017e;" />
+      <when state="circumflex" output="&#x1e91;" />
+      <when state="curl" output="&#x0291;" />
+      <when state="dotabove" output="&#x017c;" />
+      <when state="dotbelow" output="&#x1e93;" />
+      <when state="hook" output="&#x0225;" />
+      <when state="linebelow" output="&#x1e95;" />
+      <when state="retroflexhook" output="&#x0290;" />
+      <when state="stroke" output="&#x01b6;" />
+    </action>
+    <!--
+        In the Greek alphabet, we represent their diacritics with the following
+        mapping:
+
+                 tonos - dotabove
+             dialytika - diaeresis
+                 psili - horn
+                 dasia - hookabove
+                 varia - grave
+                  oxia - acute
+         ypogegrammeni - ogonek
+        prosgegrammeni /
+                vrachy - breve
+                macron - macron
+      -->
+    <action id="ALPHA">
+      <when state="dotabove" output="&#x0386;" />
+      <when state="none" output="&#x0391;" />
+      <when state="horn" output="&#x1f08;" />
+      <when state="hookabove" output="&#x1f09;" />
+      <when state="grave-horn" output="&#x1f0a;" />
+      <when state="grave-hookabove" output="&#x1f0b;" />
+      <when state="acute-horn" output="&#x1f0c;" />
+      <when state="acute-hookabove" output="&#x1f0d;" />
+      <when state="horn-tilde" output="&#x1f0e;" />
+      <when state="hookabove-tilde" output="&#x1f0f;" />
+      <when state="horn-ogonek" output="&#x1f88;" />
+      <when state="hookabove-ogonek" output="&#x1f89;" />
+      <when state="grave-horn-ogonek" output="&#x1f8a;" />
+      <when state="grave-hookabove-ogonek" output="&#x1f8b;" />
+      <when state="acute-horn-ogonek" output="&#x1f8c;" />
+      <when state="acute-hookabove-ogonek" output="&#x1f8d;" />
+      <when state="horn-ogonek-tilde" output="&#x1f8e;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1f8f;" />
+      <when state="breve" output="&#x1fb8;" />
+      <when state="macron" output="&#x1fb9;" />
+      <when state="grave" output="&#x1fba;" />
+      <when state="acute" output="&#x1fbb;" />
+      <when state="ogonek" output="&#x1fbc;" />
+    </action>
+    <action id="alpha">
+      <when state="dotabove" output="&#x03ac;" />
+      <when state="none" output="&#x03b1;" />
+      <when state="horn" output="&#x1f00;" />
+      <when state="hookabove" output="&#x1f01;" />
+      <when state="grave-horn" output="&#x1f02;" />
+      <when state="grave-hookabove" output="&#x1f03;" />
+      <when state="acute-horn" output="&#x1f04;" />
+      <when state="acute-hookabove" output="&#x1f05;" />
+      <when state="horn-tilde" output="&#x1f06;" />
+      <when state="hookabove-tilde" output="&#x1f07;" />
+      <when state="grave" output="&#x1f70;" />
+      <when state="acute" output="&#x1f71;" />
+      <when state="horn-ogonek" output="&#x1f80;" />
+      <when state="hookabove-ogonek" output="&#x1f81;" />
+      <when state="grave-horn-ogonek" output="&#x1f82;" />
+      <when state="grave-hookabove-ogonek" output="&#x1f83;" />
+      <when state="acute-horn-ogonek" output="&#x1f84;" />
+      <when state="acute-hookabove-ogonek" output="&#x1f85;" />
+      <when state="horn-ogonek-tilde" output="&#x1f86;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1f87;" />
+      <when state="breve" output="&#x1fb0;" />
+      <when state="macron" output="&#x1fb1;" />
+      <when state="grave-ogonek" output="&#x1fb2;" />
+      <when state="ogonek" output="&#x1fb3;" />
+      <when state="acute-ogonek" output="&#x1fb4;" />
+      <when state="tilde" output="&#x1fb6;" />
+      <when state="ogonek-tilde" output="&#x1fb7;" />
+    </action>
+    <action id="EPSILON">
+      <when state="dotabove" output="&#x0388;" />
+      <when state="none" output="&#x0395;" />
+      <when state="horn" output="&#x1f18;" />
+      <when state="hookabove" output="&#x1f19;" />
+      <when state="grave-horn" output="&#x1f1a;" />
+      <when state="grave-hookabove" output="&#x1f1b;" />
+      <when state="acute-horn" output="&#x1f1c;" />
+      <when state="acute-hookabove" output="&#x1f1d;" />
+      <when state="grave" output="&#x1fc8;" />
+      <when state="acute" output="&#x1fc9;" />
+    </action>
+    <action id="epsilon">
+      <when state="dotabove" output="&#x03ad;" />
+      <when state="none" output="&#x03b5;" />
+      <when state="horn" output="&#x1f10;" />
+      <when state="hookabove" output="&#x1f11;" />
+      <when state="grave-horn" output="&#x1f12;" />
+      <when state="grave-hookabove" output="&#x1f13;" />
+      <when state="acute-horn" output="&#x1f14;" />
+      <when state="acute-hookabove" output="&#x1f15;" />
+      <when state="grave" output="&#x1f72;" />
+      <when state="acute" output="&#x1f73;" />
+    </action>
+    <action id="ETA">
+      <when state="dotabove" output="&#x0389;" />
+      <when state="none" output="&#x0397;" />
+      <when state="horn" output="&#x1f28;" />
+      <when state="hookabove" output="&#x1f29;" />
+      <when state="grave-horn" output="&#x1f2a;" />
+      <when state="grave-hookabove" output="&#x1f2b;" />
+      <when state="acute-horn" output="&#x1f2c;" />
+      <when state="acute-hookabove" output="&#x1f2d;" />
+      <when state="horn-tilde" output="&#x1f2e;" />
+      <when state="hookabove-tilde" output="&#x1f2f;" />
+      <when state="horn-ogonek" output="&#x1f98;" />
+      <when state="hookabove-ogonek" output="&#x1f99;" />
+      <when state="grave-horn-ogonek" output="&#x1f9a;" />
+      <when state="grave-hookabove-ogonek" output="&#x1f9b;" />
+      <when state="acute-horn-ogonek" output="&#x1f9c;" />
+      <when state="acute-hookabove-ogonek" output="&#x1f9d;" />
+      <when state="horn-ogonek-tilde" output="&#x1f9e;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1f9f;" />
+      <when state="grave" output="&#x1fca;" />
+      <when state="acute" output="&#x1fcb;" />
+      <when state="ogonek" output="&#x1fcc;" />
+    </action>
+    <action id="eta">
+      <when state="dotabove" output="&#x03ae;" />
+      <when state="none" output="&#x03b7;" />
+      <when state="horn" output="&#x1f20;" />
+      <when state="hookabove" output="&#x1f21;" />
+      <when state="grave-horn" output="&#x1f22;" />
+      <when state="grave-hookabove" output="&#x1f23;" />
+      <when state="acute-horn" output="&#x1f24;" />
+      <when state="acute-hookabove" output="&#x1f25;" />
+      <when state="horn-tilde" output="&#x1f26;" />
+      <when state="hookabove-tilde" output="&#x1f27;" />
+      <when state="grave" output="&#x1f74;" />
+      <when state="acute" output="&#x1f75;" />
+      <when state="horn-ogonek" output="&#x1f90;" />
+      <when state="hookabove-ogonek" output="&#x1f91;" />
+      <when state="grave-horn-ogonek" output="&#x1f92;" />
+      <when state="grave-hookabove-ogonek" output="&#x1f93;" />
+      <when state="acute-horn-ogonek" output="&#x1f94;" />
+      <when state="acute-hookabove-ogonek" output="&#x1f95;" />
+      <when state="horn-ogonek-tilde" output="&#x1f96;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1f97;" />
+      <when state="grave-ogonek" output="&#x1fc2;" />
+      <when state="ogonek" output="&#x1fc3;" />
+      <when state="acute-ogonek" output="&#x1fc4;" />
+      <when state="tilde" output="&#x1fc6;" />
+      <when state="ogonek-tilde" output="&#x1fc7;" />
+    </action>
+    <action id="IOTA">
+      <when state="dotabove" output="&#x038a;" />
+      <when state="none" output="&#x0399;" />
+      <when state="diaeresis" output="&#x03aa;" />
+      <when state="horn" output="&#x1f38;" />
+      <when state="hookabove" output="&#x1f39;" />
+      <when state="grave-horn" output="&#x1f3a;" />
+      <when state="grave-hookabove" output="&#x1f3b;" />
+      <when state="acute-horn" output="&#x1f3c;" />
+      <when state="acute-hookabove" output="&#x1f3d;" />
+      <when state="horn-tilde" output="&#x1f3e;" />
+      <when state="hookabove-tilde" output="&#x1f3f;" />
+      <when state="breve" output="&#x1fb8;" />
+      <when state="macron" output="&#x1fb9;" />
+      <when state="grave" output="&#x1fba;" />
+      <when state="acute" output="&#x1fbb;" />
+    </action>
+    <action id="iota">
+      <when state="diaeresis-dotabove" output="&#x0390;" />
+      <when state="dotabove" output="&#x03af;" />
+      <when state="none" output="&#x0389;" />
+      <when state="diaeresis" output="&#x03ca;" />
+      <when state="horn" output="&#x1f30;" />
+      <when state="hookabove" output="&#x1f31;" />
+      <when state="grave-horn" output="&#x1f32;" />
+      <when state="grave-hookabove" output="&#x1f33;" />
+      <when state="acute-horn" output="&#x1f34;" />
+      <when state="acute-hookabove" output="&#x1f35;" />
+      <when state="horn-tilde" output="&#x1f36;" />
+      <when state="hookabove-tilde" output="&#x1f37;" />
+      <when state="grave" output="&#x1f76;" />
+      <when state="acute" output="&#x1f77;" />
+      <when state="breve" output="&#x1fd0;" />
+      <when state="macron" output="&#x1fd1;" />
+      <when state="diaeresis-grave" output="&#x1fd2;" />
+      <when state="diaeresis-acute" output="&#x1fd3;" />
+      <when state="tilde" output="&#x1fd6;" />
+      <when state="diaeresis-tilde" output="&#x1fd7;" />
+    </action>
+    <action id="OMICRON">
+      <when state="dotabove" output="&#x038c;" />
+      <when state="none" output="&#x039f;" />
+      <when state="horn" output="&#x1f48;" />
+      <when state="hookabove" output="&#x1f49;" />
+      <when state="grave-horn" output="&#x1f4a;" />
+      <when state="grave-hookabove" output="&#x1f4b;" />
+      <when state="acute-horn" output="&#x1f4c;" />
+      <when state="acute-hookabove" output="&#x1f4d;" />
+      <when state="grave" output="&#x1ff8;" />
+      <when state="acute" output="&#x1ff9;" />
+    </action>
+    <action id="omicron">
+      <when state="none" output="&#x03bf;" />
+      <when state="dotabove" output="&#x03cc;" />
+      <when state="horn" output="&#x1f40;" />
+      <when state="hookabove" output="&#x1f41;" />
+      <when state="grave-horn" output="&#x1f42;" />
+      <when state="grave-hookabove" output="&#x1f43;" />
+      <when state="acute-horn" output="&#x1f44;" />
+      <when state="acute-hookabove" output="&#x1f45;" />
+      <when state="grave" output="&#x1f78;" />
+      <when state="acute" output="&#x1f79;" />
+    </action>
+    <action id="RHO">
+      <when state="none" output="&#x03a1;" />
+      <when state="hookabove" output="&#x1fec;" />
+    </action>
+    <action id="rho">
+      <when state="none" output="&#x03c1;" />
+      <when state="horn" output="&#x1fe4;" />
+      <when state="hookabove" output="&#x1fe5;" />
+    </action>
+    <action id="UPSILON">
+      <when state="dotabove" output="&#x038e;" />
+      <when state="none" output="&#x03a5;" />
+      <when state="hookabove" output="&#x1f59;" />
+      <when state="grave-hookabove" output="&#x1f5b;" />
+      <when state="acute-hookabove" output="&#x1f5d;" />
+      <when state="hookabove-tilde" output="&#x1f5f;" />
+      <when state="breve" output="&#x1fe8;" />
+      <when state="macron" output="&#x1fe9;" />
+      <when state="grave" output="&#x1fea;" />
+      <when state="acute" output="&#x1feb;" />
+    </action>
+    <action id="upsilon">
+      <when state="diaeresis-dotabove" output="&#x03b0;" />
+      <when state="none" output="&#x03c5;" />
+      <when state="diaeresis" output="&#x03cb;" />
+      <when state="dotabove" output="&#x03cd;" />
+      <when state="horn" output="&#x1f50;" />
+      <when state="hookabove" output="&#x1f51;" />
+      <when state="grave-horn" output="&#x1f52;" />
+      <when state="grave-hookabove" output="&#x1f53;" />
+      <when state="acute-horn" output="&#x1f54;" />
+      <when state="acute-hookabove" output="&#x1f55;" />
+      <when state="horn-tilde" output="&#x1f56;" />
+      <when state="hookabove-tilde" output="&#x1f57;" />
+      <when state="grave" output="&#x1f76a;" />
+      <when state="acute" output="&#x1f7b;" />
+      <when state="breve" output="&#x1fe0;" />
+      <when state="macron" output="&#x1fe1;" />
+      <when state="diaeresis-grave" output="&#x1fe2;" />
+      <when state="diaeresis-acute" output="&#x1fe3;" />
+      <when state="tilde" output="&#x1fe6;" />
+      <when state="diaeresis-tilde" output="&#x1fe7;" />
+    </action>
+    <action id="OMEGA">
+      <when state="dotabove" output="&#x038f;" />
+      <when state="none" output="&#x03a9;" />
+      <when state="horn" output="&#x1f68;" />
+      <when state="hookabove" output="&#x1f69;" />
+      <when state="grave-horn" output="&#x1f6a;" />
+      <when state="grave-hookabove" output="&#x1f6b;" />
+      <when state="acute-horn" output="&#x1f6c;" />
+      <when state="acute-hookabove" output="&#x1f6d;" />
+      <when state="horn-tilde" output="&#x1f6e;" />
+      <when state="hookabove-tilde" output="&#x1f6f;" />
+      <when state="horn-ogonek" output="&#x1fa8;" />
+      <when state="hookabove-ogonek" output="&#x1fa9;" />
+      <when state="grave-horn-ogonek" output="&#x1faa;" />
+      <when state="grave-hookabove-ogonek" output="&#x1fab;" />
+      <when state="acute-horn-ogonek" output="&#x1fac;" />
+      <when state="acute-hookabove-ogonek" output="&#x1fad;" />
+      <when state="horn-ogonek-tilde" output="&#x1fae;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1faf;" />
+      <when state="grave" output="&#x1ffa;" />
+      <when state="acute" output="&#x1ffb;" />
+      <when state="ogonek" output="&#x1ffc;" />
+    </action>
+    <action id="omega">
+      <when state="none" output="&#x03c9;" />
+      <when state="dotabove" output="&#x03ce;" />
+      <when state="horn" output="&#x1f60;" />
+      <when state="hookabove" output="&#x1f61;" />
+      <when state="grave-horn" output="&#x1f62;" />
+      <when state="grave-hookabove" output="&#x1f63;" />
+      <when state="acute-horn" output="&#x1f64;" />
+      <when state="acute-hookabove" output="&#x1f65;" />
+      <when state="horn-tilde" output="&#x1f66;" />
+      <when state="hookabove-tilde" output="&#x1f67;" />
+      <when state="grave" output="&#x1f7c;" />
+      <when state="acute" output="&#x1f7d;" />
+      <when state="horn-ogonek" output="&#x1fa0;" />
+      <when state="hookabove-ogonek" output="&#x1fa1;" />
+      <when state="grave-horn-ogonek" output="&#x1fa2;" />
+      <when state="grave-hookabove-ogonek" output="&#x1fa3;" />
+      <when state="acute-horn-ogonek" output="&#x1fa4;" />
+      <when state="acute-hookabove-ogonek" output="&#x1fa5;" />
+      <when state="horn-ogonek-tilde" output="&#x1fa6;" />
+      <when state="hookabove-ogonek-tilde" output="&#x1fa7;" />
+      <when state="grave-ogonek" output="&#x1ff2;" />
+      <when state="ogonek" output="&#x1ff3;" />
+      <when state="acute-ogonek" output="&#x1ff4;" />
+      <when state="tilde" output="&#x1ff6;" />
+      <when state="ogonek-tilde" output="&#x1ff7;" />
+    </action>
+    <!-- non-alphabetic characters -->
+    <action id="caret">
+      <when state="none" output="^" />
+      <when state="macron" output="&#x22bc;" /> <!-- nand -->
+    </action>
+    <action id="equals">
+      <when state="none" output="=" />
+      <when state="caron" output="&#x2259;" />  <!-- equiangular to -->
+      <when state="circumflex" output="&#x2259;" />  <!-- estimates -->
+      <when state="dotabove" output="&#x2250;" />  <!-- approaches the limit -->
+      <when state="linebelow" output="&#x2261;" />  <!-- identical to -->
+      <when state="doublelinebelow" output="&#x2263;" />  <!-- strictly equivilent to -->
+      <when state="macron" output="&#x2261;" />  <!-- identical to -->
+      <when state="doublemacron" output="&#x2263;" />  <!-- strictly equivilent to -->
+      <when state="inverted breve" output="&#x2258;" />  <!-- corresponds to -->
+      <when state="ringabove" output="&#x2257;" />  <!-- ring equal to -->
+      <when state="stroke" output="&#x2260;" /> <!-- not equal to -->
+      <when state="tilde" output="&#x2245;" /> <!-- approximately equal to -->
+      <when state="dotbelow-dotabove" output="&#x2251;" />  <!-- geometrically equal to -->
+      <when state="linebelow-macron" output="&#x2263;" />  <!-- strictly equivilent to -->
+      <when state="linebelow-stroke" output="&#x2262;" />  <!-- not identical to -->
+      <when state="macron-stroke" output="&#x2262;" />  <!-- not identical to -->
+      <when state="stroke-tilde" output="&#x2247;" /> <!-- neither approximately nor actually equal to -->
+    </action>
+    <action id="greaterthan">
+      <when state="none" output=">" />
+      <when state="linebelow" output="&#x2265;" /> <!-- greater-than or equal to -->
+      <when state="doublelinebelow" output="&#x2267;" /> <!-- greater-than over equal to -->
+      <when state="macron" output="&#x22dd;" /> <!-- equal to or greater-than -->
+      <when state="stroke" output="&#x226f;" /> <!-- not greater-than -->
+      <when state="tildebelow" output="&#x2273;" /> <!-- greater-than or equivilent to -->
+      <when state="linebelow-stroke" output="&#x2271;" /> <!-- neither greater-than nor equal to -->
+      <when state="stroke-tildebelow" output="&#x2275;" /> <!-- neither greater-than nor equivilent to -->
+    </action>
+    <action id="lessthan">
+      <when state="none" output="&#x003c;" />
+      <when state="linebelow" output="&#x2264;" /> <!-- less-than or equal to -->
+      <when state="doublelinebelow" output="&#x2266;" /> <!-- less-than over equal to -->
+      <when state="macron" output="&#x22dc;" /> <!-- equal to or less-than -->
+      <when state="stroke" output="&#x226e;" /> <!-- not less-than -->
+      <when state="tildebelow" output="&#x2272;" /> <!-- less-than or equivilent to -->
+      <when state="linebelow-stroke" output="&#x2270;" /> <!-- neither less-than nor equal to -->
+      <when state="stroke-tildebelow" output="&#x2274;" /> <!-- neither less-than nor equivilent to -->
+    </action>
+    <action id="minus">
+      <when state="none" output="&#x2212;" />
+      <when state="dotabove" output="&#x2238;" /> <!-- dot minus -->
+      <when state="tildebelow" output="&#x2238;" /> <!-- minus tilde -->
+    </action>
+    <action id="or">
+      <when state="none" output="&#x2228;" />
+      <when state="linebelow" output="&#x22bb;" /> <!-- xor -->
+      <when state="macron" output="&#x22bd;" /> <!-- nor -->
+    </action>
+    <action id="parallel">
+      <when state="none" output="&#x2225;" />
+      <when state="stroke" output="&#x2226;" /> <!-- not parallel to -->
+    </action>
+    <action id="plus">
+      <when state="none" output="+" />
+      <when state="circumflex" output="&#x2a25;" /> <!-- plus sign with circumflex accent above -->
+      <when state="dotabove" output="&#x2a25;" /> <!-- dot plus -->
+      <when state="dotbelow" output="&#x2a25;" /> <!-- plus sign with dot below -->
+      <when state="linebelow" output="&#x00b1;" /> <!-- plus-minus sign -->
+      <when state="doublelinebelow" output="&#x2a72;" /> <!-- plus sign above equals sign -->
+      <when state="macron" output="&#x2213;" /> <!-- minus-or-plus sign -->
+      <when state="doublemacron" output="&#x2a71;" /> <!-- equals sign above plus sign -->
+      <when state="ringabove" output="&#x2a22;" /> <!-- plus sign with small circle above -->
+      <when state="tilde" output="&#x2a24;" /> <!-- plus sign with tilde above -->
+      <when state="tildebelow" output="&#x2a26;" /> <!-- plus sign with tilde below -->
+    </action>
+    <action id="subset">
+      <when state="none" output="&#x2282;" />
+      <when state="bar" output="&#x2208;" /> <!-- element of -->
+      <when state="doublebar" output="&#x22f9;" /> <!-- element of with two horizontal strokes -->
+      <when state="linebelow" output="&#x2286;" /> <!-- subset of or equal to -->
+      <when state="stroke" output="&#x2284;" /> <!-- not a subset of-->
+      <when state="bar-dotabove" output="&#x22f5;" /> <!-- element of with dot above -->
+      <when state="bar-linebelow" output="&#x22f8;" /> <!-- element of with underbar -->
+      <when state="bar-macron" output="&#x22f6;" /> <!-- element of with overbar -->
+      <when state="bar-stroke" output="&#x2209;" /> <!-- not an element of-->
+      <when state="linebelow-stroke" output="&#x2288;" /> <!-- neither a subset of nor equal to -->
+    </action>
+    <action id="superset">
+      <when state="none" output="&#x2283;" />
+      <when state="bar" output="&#x220b;" /> <!-- contains as member -->
+      <when state="linebelow" output="&#x2287;" /> <!-- superset of or equal to -->
+      <when state="stroke" output="&#x2285;" /> <!-- not a superset of -->
+      <when state="bar-macron" output="&#x22fd;" /> <!-- contains with overbar -->
+      <when state="bar-stroke" output="&#x220c;" /> <!-- does not contain as member -->
+      <when state="linebelow-stroke" output="&#x2289;" /> <!-- neither a superset of nor equal to -->
+    </action>
+    <action id="thereexists">
+      <when state="none" output="&#x2203;" />
+      <when state="stroke" output="&#x2204;" /> <!-- not equal to -->
+    </action>
+    <action id="turnedhyphen">
+      <when state="none" output="~" />
+      <when state="linebelow" output="&#x2243;" /> <!-- asymptotically equal to -->
+      <when state="doublelinebelow" output="&#x2245;" /> <!-- approximately equal to -->
+      <when state="macron" output="&#x2242;" /> <!-- minus tilde -->
+      <when state="stroke" output="&#x2241;" /> <!-- not tilde -->
+      <when state="tilde" output="&#x2248;" /> <!-- almost equal to -->
+      <when state="doubletilde" output="&#x224b;" /> <!-- triple tilde -->
+      <when state="tildebelow" output="&#x2248;" /> <!-- almost equal to -->
+      <when state="doubletildebelow" output="&#x224b;" /> <!-- triple tilde -->
+      <when state="linebelow-tilde" output="&#x224a;" /> <!-- almost equal or equal to -->
+      <when state="linebelow-tildebelow" output="&#x224a;" /> <!-- almost equal or equal to -->
+      <when state="stroke-tilde" output="&#x2249;" /> <!-- not almost equal to -->
+      <when state="stroke-tildebelow" output="&#x2249;" /> <!-- not almost equal to -->
+      <when state="tilde-tildebelow" output="&#x224b;" /> <!-- triple tilde -->
+    </action>
+  </actions>
+  <terminators>
+    <when state="acute" output="&#x00b4;" />
+    <when state="doubleacute" output=" &#x02dd;" />
+    <when state="bar" output="-" />
+    <when state="breve" output=" &#x02d8;" />
+    <when state="doublebreve" output=" &#x035d;" />
+    <when state="caron" output="&#x02c7;" />
+    <when state="cedilla" output="&#x00b8;" />
+    <when state="circumflex" output=" &#x0302;" />
+    <when state="commabelow" output=" &#x0326;" />
+    <when state="diaeresis" output="&#x00a8;" />
+    <when state="dotabove" output="&#x02d9;" />
+    <when state="dotbelow" output=" &#x0323;" />
+    <when state="grave" output="`" />
+    <when state="doublegrave" output=" &#x030f;" />
+    <when state="hook" output=" &#x0321;" />
+    <when state="hookabove" output=" &#x0309;" />
+    <when state="horn" output=" &#x031b;" />
+    <when state="macron" output="&#x00af;" />
+    <when state="doublemacron" output=" &#x035e;" />
+    <when state="linebelow" output="_" />
+    <when state="doublelinebelow" output="&#x2017;" />
+    <when state="ogonek" output="&#x02db;" />
+    <when state="ringabove" output="&#x02da;" />
+    <when state="stroke" output="/" />
+    <when state="tilde" output="&#x02dc;" />
+  </terminators>
+</keyboard>
