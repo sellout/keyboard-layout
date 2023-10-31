@@ -1,0 +1,8 @@
+direnv
+garnix
+[Nn]ix
+Pfeil
+ShellCheck
+formatter
+keylayout
+xmodmap

@@ -1,0 +1,6 @@
+[commit "template"]
+	contents = ""
+	path = ".config/git/template/commit.txt"
+
+[core]
+	hooksPath = "/nix/store/wh85b5vs51pfn4bm1x9i9x77594b2w7i-git-hooks-for-keyboard-layout"
