@@ -55,9 +55,9 @@
             version = "0.1.0";
 
             buildPhase = ''
-              cp -r "$src" build
-              chmod -R +w build
-              cd build
+              cp -r "$src/software" .
+              chmod -R +w software
+              cd software
               patchShebangs --build ./generate_xmodmap.pl
               ./generate_xmodmap.pl
             '';

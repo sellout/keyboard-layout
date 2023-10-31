@@ -3,6 +3,13 @@ garnix
 [Nn]ix
 Pfeil
 ShellCheck
+Configurator
+Ergodox
 formatter
+IBM
+Keyboardio
 keylayout
+Kiibohd
+Kinesis
+QWERTY
 xmodmap

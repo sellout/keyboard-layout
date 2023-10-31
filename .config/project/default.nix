@@ -23,14 +23,22 @@
     vale = {
       enable = true;
       excludes = [
+        "*.json"
         "*.keylayout"
         "*.xmodmap"
         "./.github/settings.yml"
       ];
       formatSettings."*"."Microsoft.FirstPerson" = "NO";
       vocab.${config.project.name}.accept = [
+        "Configurator"
+        "Ergodox"
         "formatter"
+        "IBM"
+        "Keyboardio"
         "keylayout"
+        "Kiibohd"
+        "Kinesis"
+        "QWERTY"
         "xmodmap"
       ];
     };

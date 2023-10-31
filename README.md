@@ -2,43 +2,25 @@
 
 [![built with garnix](https://img.shields.io/endpoint?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2Fsellout%2Fkeyboard-layout)](https://garnix.io)
 
-Various hardware and software keyboard layouts
+Various keyboard layouts that I use and/or have designed. There are both layouts for physical keyboards and software layouts.
 
-This currently only works with Mac OS X and Unix. It doesn't work with Windows because the files aren’t plain text, and I haven't yet been able to find a free library to generate the files. If there are any other systems that I can be generating files for, please let me know.
+In general, the physical keyboard layouts are minimal. They’re intended to align the keyboards with each other and allow the software layouts to consistently reconfigure them to be used as intended.
 
-The two files to keep updated are Universal.xmodmap and Universal.keylayout. Try to reflect changes in both, although keylayout is
-more complete because the format allows for more specification.
+However, there are exceptions:
 
-generate_xmodmap.pl creates all the actual xmodmap files from the
-Universal.xmodmap and the platform specific files.
+- “support” layouts expect the software to be configured with standard QWERTY layouts and do all the remapping in the keyboard. This allows me the best chance to get _my_ layout when I plug my keyboard into a random computer.
+- sometimes keys that seem re-arrangeable on one layout aren’t on another. For example, QWERTY `-` and `=` are mapped to Dvorak `[` and `]`. This is fine on a standard 104-key keyboard, but on the default Infinity Ergodox layout, `=` is on the far left and `-` is on the far right. When used with software Dvorak, this means that `[` and `]` aren’t only far apart, but reversed (with `]` on the left and `[` on the right).
 
-Eventually, there should be one file that produces all the output files (xmodmap, keylayout, and whatever Windows uses).
+## physical keyboards I’ve used
 
-For the most part, when typing diacritics the order doesn't matter. However,
-with macron+diaeresis+[U|u], the order is important (two different chars).
-Also, there is some confusion as to the use of the stroke and bar
-diacritics. Some things labeled with stroke in Unicode have a horizontal
-stroke, others angled. The bar is always horizontal. The way to generate
-certain characters is thus negotiable. I don't know enough about the
-characters involved to make an informed decision.
+This isn’t comprehensive, but captures the most notable ones. The **emphasized** entries have layouts defined here.
 
-You can enter any character with no more than three key sequences (two
-diacritics). All primary characters require no more than two key
-sequences (one diacritic).
-
-Hopefully, most of the sequences are intuitive.
-
-Note: In OS X, use KeyCaps to experiment with the key layout. It'll show you the layout, and it will show you the available characters after you've typed a diacritic.
-
-Here is how to see the character set we support:
-
-```bash
-perl -e 'while ($_ = <>) { /output="(.*?)"/; print "$1\n" }' Universal—Dvorak.keylayout \
-  | sort \
-  | uniq
-```
-
-Add dead key sequences like 1,ropt-uparrow to get ¹ (superscript 1) and 1,ropt-downarrow to get ₁ (subscript 1)
+- [IBM Model M](https://en.wikipedia.org/wiki/Model_M_keyboard)
+- [Twiddler](https://twiddler.tekgear.com/)
+- [Happy Hacking II](https://hhkeyboard.us/hhkb/Pro-Classic)
+- [Kinesis Advantage](https://kinesis-ergo.com/shop/advantage2/)
+- **[Infinity Ergodox](https://drop.com/buy/infinity-ergodox)**
+- **[Atreus](https://shop.keyboard.io/products/keyboardio-atreus)**
 
 ## development
 
