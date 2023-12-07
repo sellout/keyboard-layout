@@ -68,7 +68,7 @@
               cp -r "$src/software" .
               chmod -R +w software
               cd software
-              patchShebangs --build ./generate_xmodmap.pl
+              (set +o nounset; patchShebangs --build ./generate_xmodmap.pl)
               ./generate_xmodmap.pl
             '';
 

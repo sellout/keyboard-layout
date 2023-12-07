@@ -4,4 +4,4 @@
 !/.cache/vale/Vocab/
 /.cache/vale/Vocab/*
 !/.cache/vale/Vocab/keyboard-layout/
-/.direnv/
+/.cache/direnv/
