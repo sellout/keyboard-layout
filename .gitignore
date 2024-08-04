@@ -1,7 +1,14 @@
 /result
 /source
 /.cache/vale/*
+!/.cache/vale/config/
+/.cache/vale/config/*
+!/.cache/vale/config/vocabularies/
+/.cache/vale/config/vocabularies/*
+!/.cache/vale/config/vocabularies/keyboard-layout/
 !/.cache/vale/Vocab/
 /.cache/vale/Vocab/*
 !/.cache/vale/Vocab/keyboard-layout/
+/.local/state/project-manager/
+/.local/state/nix/profiles/
 /.cache/direnv/

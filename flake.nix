@@ -10,8 +10,7 @@
     ];
     ## Isolate the build.
     registries = false;
-    ## Until we get rid of `_noChroot`.
-    sandbox = false;
+    sandbox = "relaxed";
   };
 
   outputs = {
@@ -21,7 +20,9 @@
     nixpkgs,
     self,
   }: let
-    pname = "keyboard-layout";
+    pname = "universal-keyboard-layout";
+
+    supportedSystems = flaky.lib.defaultSystems;
   in
     {
       schemas = {
@@ -44,18 +45,22 @@
       homeConfigurations =
         builtins.listToAttrs
         (builtins.map
-          (flaky.lib.homeConfigurations.example pname self [])
-          flake-utils.lib.defaultSystems);
+          (flaky.lib.homeConfigurations.example self
+            [({pkgs, ...}: {home.packages = [pkgs.${pname}];})])
+          supportedSystems);
     }
-    // flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {inherit system;};
+    // flake-utils.lib.eachSystem supportedSystems (system: let
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [flaky.overlays.dependencies];
+      };
 
       src = pkgs.lib.cleanSource ./.;
     in {
       packages = {
-        default = self.packages.${system}.universal-keyboard-layout;
+        default = self.packages.${system}.${pname};
 
-        "universal-keyboard-layout" =
+        "${pname}" =
           bash-strict-mode.lib.checkedDrv pkgs
           (pkgs.stdenv.mkDerivation {
             inherit pname src;
@@ -78,37 +83,23 @@
           });
       };
 
-      devShells = self.projectConfigurations.${system}.devShells;
-
       projectConfigurations =
         flaky.lib.projectConfigurations.default {inherit pkgs self;};
 
-      checks = self.projectConfigurations.${system}.checks;
+      devShells =
+        self.projectConfigurations.${system}.devShells
+        // {default = flaky.lib.devShells.default system self [] "";};
 
+      checks = self.projectConfigurations.${system}.checks;
       formatter = self.projectConfigurations.${system}.formatter;
     });
 
   inputs = {
-    bash-strict-mode = {
-      inputs = {
-        flake-utils.follows = "flake-utils";
-        flaky.follows = "flaky";
-        nixpkgs.follows = "nixpkgs";
-      };
-      url = "github:sellout/bash-strict-mode";
-    };
+    ## Flaky should generally be the source of truth for its inputs.
+    flaky.url = "github:sellout/flaky";
 
-    flake-utils.url = "github:numtide/flake-utils";
-
-    flaky = {
-      inputs = {
-        bash-strict-mode.follows = "bash-strict-mode";
-        flake-utils.follows = "flake-utils";
-        nixpkgs.follows = "nixpkgs";
-      };
-      url = "github:sellout/flaky";
-    };
-
-    nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
+    bash-strict-mode.follows = "flaky/bash-strict-mode";
+    flake-utils.follows = "flaky/flake-utils";
+    nixpkgs.follows = "flaky/nixpkgs";
   };
 }
