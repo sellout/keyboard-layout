@@ -1,9 +1,10 @@
 {
-  "project": {
-    "description": "Making it simpler to manage poly-repo projects (and projectiverses).",
-    "name": "universal-keyboard-layout",
-    "repo": "sellout/keyboard-layout",
-    "summary": "Various hardware and software keyboard layouts"
-  },
-  "type": {"name":"nix"}
+  "project":
+    {
+      "description": "Keyboard layouts for my personal weird style.",
+      "name": "keyboard-layout",
+      "repo": "sellout/keyboard-layout",
+      "summary": "Various hardware and software keyboard layouts",
+    },
+  "type": { "name": "default" },
 }

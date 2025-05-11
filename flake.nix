@@ -9,20 +9,20 @@
       "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
     ];
     ## Isolate the build.
-    registries = false;
     sandbox = "relaxed";
+    use-registries = false;
   };
 
   outputs = {
-    bash-strict-mode,
     flake-utils,
     flaky,
     nixpkgs,
     self,
+    systems,
   }: let
     pname = "universal-keyboard-layout";
 
-    supportedSystems = flaky.lib.defaultSystems;
+    supportedSystems = import systems;
   in
     {
       schemas = {
@@ -50,37 +50,34 @@
           supportedSystems);
     }
     // flake-utils.lib.eachSystem supportedSystems (system: let
-      pkgs = import nixpkgs {
-        inherit system;
-        overlays = [flaky.overlays.dependencies];
-      };
+      pkgs = nixpkgs.legacyPackages.${system}.appendOverlays [
+        flaky.overlays.default
+      ];
 
       src = pkgs.lib.cleanSource ./.;
     in {
       packages = {
         default = self.packages.${system}.${pname};
 
-        "${pname}" =
-          bash-strict-mode.lib.checkedDrv pkgs
-          (pkgs.stdenv.mkDerivation {
-            inherit pname src;
+        "${pname}" = pkgs.checkedDrv (pkgs.stdenv.mkDerivation {
+          inherit pname src;
 
-            nativeBuildInputs = [pkgs.perl];
+          nativeBuildInputs = [pkgs.perl];
 
-            version = "0.1.0";
+          version = "0.1.0";
 
-            buildPhase = ''
-              cp -r "$src/software" .
-              chmod -R +w software
-              cd software
-              (set +o nounset; patchShebangs --build ./generate_xmodmap.pl)
-              ./generate_xmodmap.pl
-            '';
+          buildPhase = ''
+            cp -r "$src/software" .
+            chmod -R +w software
+            cd software
+            (set +o nounset; patchShebangs --build ./generate_xmodmap.pl)
+            ./generate_xmodmap.pl
+          '';
 
-            installPhase = ''
-              cp -r build "$out"
-            '';
-          });
+          installPhase = ''
+            cp -r build "$out"
+          '';
+        });
       };
 
       projectConfigurations =
@@ -89,7 +86,6 @@
       devShells =
         self.projectConfigurations.${system}.devShells
         // {default = flaky.lib.devShells.default system self [] "";};
-
       checks = self.projectConfigurations.${system}.checks;
       formatter = self.projectConfigurations.${system}.formatter;
     });
@@ -98,8 +94,8 @@
     ## Flaky should generally be the source of truth for its inputs.
     flaky.url = "github:sellout/flaky";
 
-    bash-strict-mode.follows = "flaky/bash-strict-mode";
     flake-utils.follows = "flaky/flake-utils";
     nixpkgs.follows = "flaky/nixpkgs";
+    systems.follows = "flaky/systems";
   };
 }
